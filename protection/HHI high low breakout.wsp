@@ -13,14 +13,14 @@
 	ContainerHeight = '885'
 	ContainerWidth = '1750'
 	Flags = '2'
-	Height = '199'
-	Left = '69'
+	Height = '565'
+	Left = '0'
 	MinX = '-1'
 	MinY = '-1'
 	State = '3'
-	Top = '96'
+	Top = '0'
 	ViewType = '0'
-	Width = '373'
+	Width = '411'
 
 [Wsp\Window_0\ChartManager]
 	ChartCount = '4'
@@ -71,9 +71,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42384'
+	FinishDate2Id = '42412'
 	FinishDate2Name = ''
-	FinishDateId = '42384'
+	FinishDateId = '42412'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -124,8 +124,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '10709,0166989118'
-	Minimum = '10128,3142239471'
+	Maximum = '10788,9160328036'
+	Minimum = '10264,40366865'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -1709,9 +1709,9 @@
 	Type = '4'
 
 [Wsp\Window_0\ChartManager\IndexViewCalc]
-	BarSpacing = '7'
-	BarsToRight = '33,596837944664'
-	BarsToRightValue = '81'
+	BarSpacing = '1'
+	BarsToRight = '0'
+	BarsToRightValue = '0'
 	ChartShiftViewType = '0'
 	ShowEmptyPeriod = '0'
 
@@ -1946,9 +1946,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42384'
+	FinishDate2Id = '42412'
 	FinishDate2Name = ''
-	FinishDateId = '42384'
+	FinishDateId = '42412'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -2773,9 +2773,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42384'
+	FinishDate2Id = '42412'
 	FinishDate2Name = ''
-	FinishDateId = '42384'
+	FinishDateId = '42412'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -2826,8 +2826,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '447476,196593708'
-	Minimum = '-423812,770139895'
+	Maximum = '922656,105705305'
+	Minimum = '-898992,679251492'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -3737,7 +3737,7 @@
 	isStatusWindowShow = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0]
-	IdName = 's_breakoutAfter315'
+	IdName = 's_highLowBreakout'
 	Status = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper]
@@ -3747,38 +3747,6 @@
 	IOGTypeExit = '1'
 	TimesPerBar = '1'
 
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_BBLength]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '20'
-	Start2 = '20'
-	Step2 = '1'
-	Stop2 = '20'
-	Value = '20'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_NumATRs]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '2'
-	Start2 = '2'
-	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_atrRatio]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '0'
-	Start2 = '0'
-	Step2 = '1'
-	Stop2 = '0'
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_buffer]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '20'
-	Start2 = '10'
-	Step2 = '10'
-	Stop2 = '50'
-	Value = '30'
-
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_detectTime]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1400'
@@ -3787,43 +3755,11 @@
 	Stop2 = '1400'
 	Value = '1400'
 
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_entryBuffer]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '5'
-	Start2 = '0'
-	Step2 = '1'
-	Stop2 = '0'
-	Value = '5'
-
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_filePath]
-	Value = '"Z:\EPData\HHI_highlowBreakout.txt"'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_inSD]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '2'
-	Start2 = '2'
-	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Value = '"Z:\EPData\highlowBreakout.txt"'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_instrument]
 	Value = '"HHI"'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_longEntryIndex]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '0'
-	Start2 = '0'
-	Step2 = '1'
-	Stop2 = '0'
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_longExitIndex]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '0'
-	Start2 = '0'
-	Step2 = '1'
-	Stop2 = '0'
-	Value = '0'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_marketclose]
 	IsInputOptimizable = '1'
@@ -3832,78 +3768,6 @@
 	Step2 = '1'
 	Stop2 = '1610'
 	Value = '1610'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_outSD]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '3'
-	Start2 = '3'
-	Step2 = '1'
-	Stop2 = '3'
-	Value = '3'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_overBought]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '80'
-	Start2 = '80'
-	Step2 = '1'
-	Stop2 = '80'
-	Value = '80'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_overSold]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '20'
-	Start2 = '20'
-	Step2 = '1'
-	Stop2 = '20'
-	Value = '20'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_shortEntryIndex]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '0'
-	Start2 = '0'
-	Step2 = '1'
-	Stop2 = '0'
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_shortExitIndex]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '0'
-	Start2 = '0'
-	Step2 = '1'
-	Stop2 = '0'
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_smoothLen1]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '9'
-	Start2 = '9'
-	Step2 = '1'
-	Stop2 = '9'
-	Value = '9'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_smoothLen2]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '3'
-	Start2 = '3'
-	Step2 = '1'
-	Stop2 = '3'
-	Value = '3'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_smoothType]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_stochLength]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '18'
-	Start2 = '18'
-	Step2 = '1'
-	Stop2 = '18'
-	Value = '18'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\Styles\OrderType: Buy Entry\ArrowProps]
 	Color = '16711680'
@@ -4054,7 +3918,7 @@
 	Confirm = 'False'
 	NeedActivateAT = 'False'
 	Profile = 'Interactive Brokers'
-	StrategyName = 'breakoutAfter315'
+	StrategyName = 'highLowBreakout'
 	SymbolName = 'HHIA - 1 Minute - Interactive Brokers'
 
 [Wsp\Window_0\ChartManager\Strategy\StrategyHelper\OptimizerProperties\Algorithm_0]
@@ -4291,7 +4155,7 @@ The reserved words supported in Portfolio optimization:
 	TIF = '1'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_0\Second\TIFDate]
-	Ticks = '635884558852730000'
+	Ticks = '635908937142580000'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_1]
 	First = 'DU254933'
@@ -4302,7 +4166,7 @@ The reserved words supported in Portfolio optimization:
 	TIF = '1'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_1\Second\TIFDate]
-	Ticks = '635884558852730000'
+	Ticks = '635908937142580000'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_2]
 	First = 'DU254934'
@@ -4313,7 +4177,7 @@ The reserved words supported in Portfolio optimization:
 	TIF = '1'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_2\Second\TIFDate]
-	Ticks = '635884558852730000'
+	Ticks = '635908937142580000'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_3]
 	First = 'DU254935'
@@ -4324,7 +4188,7 @@ The reserved words supported in Portfolio optimization:
 	TIF = '1'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_3\Second\TIFDate]
-	Ticks = '635884558852740000'
+	Ticks = '635908937142580000'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_4]
 	First = 'DU254936'
@@ -4335,7 +4199,7 @@ The reserved words supported in Portfolio optimization:
 	TIF = '1'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_4\Second\TIFDate]
-	Ticks = '635884558852740000'
+	Ticks = '635908937142580000'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_5]
 	First = 'DU254937'
@@ -4346,7 +4210,7 @@ The reserved words supported in Portfolio optimization:
 	TIF = '1'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_5\Second\TIFDate]
-	Ticks = '635884558852740000'
+	Ticks = '635908937142580000'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_6]
 	First = 'DU254938'
@@ -4357,7 +4221,7 @@ The reserved words supported in Portfolio optimization:
 	TIF = '1'
 
 [Wsp\Window_0\ChartManager\TradePanelPlaceholder\TradePanelObject\PerAccountSetting\Settings\Settings\Item_6\Second\TIFDate]
-	Ticks = '635884558852740000'
+	Ticks = '635908937142580000'
 
 [Wsp\Window_0\ChartManager\VolumeScale]
 	VolumeBarColor = '8421504'
@@ -4370,14 +4234,14 @@ The reserved words supported in Portfolio optimization:
 	ContainerHeight = '885'
 	ContainerWidth = '1750'
 	Flags = '0'
-	Height = '705'
-	Left = '529'
+	Height = '885'
+	Left = '433'
 	MinX = '-1'
 	MinY = '-1'
 	State = '1'
-	Top = '94'
+	Top = '0'
 	ViewType = '0'
-	Width = '1221'
+	Width = '442'
 
 [Wsp\Window_1\ChartManager]
 	ChartCount = '3'
@@ -4428,9 +4292,9 @@ The reserved words supported in Portfolio optimization:
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42384'
+	FinishDate2Id = '42412'
 	FinishDate2Name = ''
-	FinishDateId = '42384'
+	FinishDateId = '42412'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -4481,15 +4345,15 @@ The reserved words supported in Portfolio optimization:
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '11132,3351069502'
-	Minimum = '9627,40632578678'
+	Maximum = '8571,98817603152'
+	Minimum = '7011,31959726381'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
 	OverlayDataSeries = 'False'
 	PriceRange.Above = '1,79769313486232E+308'
 	PriceRange.Below = '1,79769313486232E+308'
-	ScaleType = '2'
+	ScaleType = '0'
 	UseMargins = '1'
 
 [Wsp\Window_1\ChartManager\Chart_0\Series_0\LabelProcessingObject]
@@ -5344,8 +5208,8 @@ The reserved words supported in Portfolio optimization:
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '11132,3351069502'
-	Minimum = '9627,40632578678'
+	Maximum = '8571,98817603152'
+	Minimum = '7011,31959726381'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -5507,8 +5371,8 @@ The reserved words supported in Portfolio optimization:
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '11132,3351069502'
-	Minimum = '9627,40632578678'
+	Maximum = '8571,98817603152'
+	Minimum = '7011,31959726381'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -5634,8 +5498,8 @@ The reserved words supported in Portfolio optimization:
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '11132,3351069502'
-	Minimum = '9627,40632578678'
+	Maximum = '8571,98817603152'
+	Minimum = '7011,31959726381'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -5791,8 +5655,8 @@ The reserved words supported in Portfolio optimization:
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '11132,3351069502'
-	Minimum = '9627,40632578678'
+	Maximum = '8571,98817603152'
+	Minimum = '7011,31959726381'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -5978,8 +5842,8 @@ The reserved words supported in Portfolio optimization:
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '83,9559297370336'
-	Minimum = '4,83733499636213'
+	Maximum = '83,9105802183'
+	Minimum = '5,69897585230087'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -6156,8 +6020,8 @@ The reserved words supported in Portfolio optimization:
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '189,112535612533'
-	Minimum = '-432,881766381766'
+	Maximum = '33,9294871794871'
+	Minimum = '-644,660256410256'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -6222,8 +6086,8 @@ The reserved words supported in Portfolio optimization:
 
 [Wsp\Window_1\ChartManager\IndexViewCalc]
 	BarSpacing = '14'
-	BarsToRight = '64,8148148148148'
-	BarsToRightValue = '52'
+	BarsToRight = '56,4814814814815'
+	BarsToRightValue = '15'
 	ChartShiftViewType = '0'
 	ShowEmptyPeriod = '0'
 
@@ -6817,14 +6681,14 @@ The reserved words supported in Portfolio optimization:
 	ContainerHeight = '885'
 	ContainerWidth = '1750'
 	Flags = '0'
-	Height = '724'
-	Left = '0'
+	Height = '885'
+	Left = '863'
 	MinX = '-1'
 	MinY = '-1'
 	State = '1'
-	Top = '149'
+	Top = '0'
 	ViewType = '0'
-	Width = '1750'
+	Width = '441'
 
 [Wsp\Window_2\ChartManager]
 	ChartCount = '2'
@@ -6875,9 +6739,9 @@ The reserved words supported in Portfolio optimization:
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42384'
+	FinishDate2Id = '42412'
 	FinishDate2Name = ''
-	FinishDateId = '42384'
+	FinishDateId = '42412'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -8335,7 +8199,7 @@ The reserved words supported in Portfolio optimization:
 [Wsp\Window_2\ChartManager\IndexViewCalc]
 	BarSpacing = '18'
 	BarsToRight = '44,1135620915034'
-	BarsToRightValue = '41'
+	BarsToRightValue = '9'
 	ChartShiftViewType = '0'
 	ShowEmptyPeriod = '0'
 
@@ -8929,14 +8793,14 @@ The reserved words supported in Portfolio optimization:
 	ContainerHeight = '885'
 	ContainerWidth = '1750'
 	Flags = '0'
-	Height = '568'
-	Left = '0'
+	Height = '872'
+	Left = '1236'
 	MinX = '-1'
 	MinY = '-1'
 	State = '1'
-	Top = '305'
+	Top = '0'
 	ViewType = '0'
-	Width = '1750'
+	Width = '513'
 
 [Wsp\Window_3\ChartManager]
 	ChartCount = '1'
@@ -8975,38 +8839,38 @@ The reserved words supported in Portfolio optimization:
 	CallPut = '0'
 	CapacityId = '80'
 	CapacityName = ''
-	Category = '4'
+	Category = '18'
 	CategoryFilter = '254'
 	CategoryFilterName = 'All Instruments'
 	ChartTypeId = '0'
 	ChartTypeName = 'Regular'
 	CumulativeDeltaChartType = '1'
 	DataFeed = 'Interactive Brokers'
-	Description = ''
+	Description = '[!HHI.HK_101N0^FGHJKMNQUVXZ] Hang Seng China Enterprise Index'
 	Exchange = 'HKFE'
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42384'
+	FinishDate2Id = '42412'
 	FinishDate2Name = ''
-	FinishDateId = '42384'
+	FinishDateId = '42412'
 	FinishDateName = ''
 	FootPrintChartType = '0'
-	KagiReversal = '0,1'
+	KagiReversal = '1'
 	KagiReversalPercent = '1'
 	KagiReversalType = '0'
 	LineBreakCount = '3'
 	PFigureBasis = '1'
-	PFigureBoxSize = '0,1'
+	PFigureBoxSize = '1'
 	PFigureReversal = '3'
-	PriceScale = '0'
+	PriceScale = '101'
 	RangeId = '1'
 	RangeName = 'PERIOD'
-	RealTimeCategory = '4'
+	RealTimeCategory = '18'
 	RealTimeDataFeed = 'Interactive Brokers'
 	RealTimeExchange = 'HKFE'
-	RealTimeSymbol = 'VHSI'
-	RenkoBoxSize = '0,1'
+	RealTimeSymbol = 'HHIA'
+	RenkoBoxSize = '1'
 	RenkoBoxSizeType = '0'
 	ResolutionId = '3'
 	ResolutionName = 'Hour'
@@ -9021,7 +8885,7 @@ The reserved words supported in Portfolio optimization:
 	StartDateId = '41426'
 	StartDateName = ''
 	StrikePrice = ''
-	Symbol = 'VHSI'
+	Symbol = 'HHIA'
 	TimeZoneId = '0'
 	TimeZoneName = 'Local'
 	Version = '2'
@@ -9040,8 +8904,8 @@ The reserved words supported in Portfolio optimization:
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '73,4376044309894'
-	Minimum = '-18,1474418351418'
+	Maximum = '9515,66528925619'
+	Minimum = '6874,25114784206'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -9054,7 +8918,7 @@ The reserved words supported in Portfolio optimization:
 [Wsp\Window_3\ChartManager\Chart_0\Series_0\LabelProcessingObject]
 	AutoMode = '1'
 	EnableProcessing = '0'
-	PriceScaleType = '109'
+	PriceScaleType = '101'
 	SelectedId = '0'
 
 [Wsp\Window_3\ChartManager\Chart_0\Series_0\LabelProcessingObject\Item 0]
@@ -9805,9 +9669,9 @@ The reserved words supported in Portfolio optimization:
 	Type = '4'
 
 [Wsp\Window_3\ChartManager\IndexViewCalc]
-	BarSpacing = '4'
-	BarsToRight = '8,61618798955614'
-	BarsToRightValue = '16'
+	BarSpacing = '9'
+	BarsToRight = '49,0360657466648'
+	BarsToRightValue = '25'
 	ChartShiftViewType = '0'
 	ShowEmptyPeriod = '0'
 
@@ -10181,7 +10045,7 @@ The reserved words supported in Portfolio optimization:
 	NeedActivateAT = 'False'
 	Profile = 'Interactive Brokers'
 	StrategyName = ''
-	SymbolName = 'VHSI - 1 Hour - Interactive Brokers'
+	SymbolName = 'HHIA - 1 Hour - Interactive Brokers'
 
 [Wsp\Window_3\ChartManager\Strategy\StrategyHelper\OptimizerProperties\Algorithm_0]
 	CFFScriptGenetic = '// TODO: Enter your formula to replace the samples below 
