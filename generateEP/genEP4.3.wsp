@@ -10,17 +10,17 @@
 	WindowCount = '0'
 
 [Wsp\Window_0]
-	ContainerHeight = '925'
+	ContainerHeight = '885'
 	ContainerWidth = '1709'
 	Flags = '2'
-	Height = '912'
+	Height = '908'
 	Left = '0'
 	MinX = '-1'
 	MinY = '-1'
 	State = '3'
 	Top = '0'
 	ViewType = '0'
-	Width = '2092'
+	Width = '2345'
 
 [Wsp\Window_0\ChartManager]
 	ChartCount = '5'
@@ -71,9 +71,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42432'
+	FinishDate2Id = '42433'
 	FinishDate2Name = ''
-	FinishDateId = '42432'
+	FinishDateId = '42433'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -124,8 +124,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8497,94444444445'
-	Minimum = '8299,05555555555'
+	Maximum = '8531,72222222222'
+	Minimum = '8297,27777777778'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -904,9 +904,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42432'
+	FinishDate2Id = '42433'
 	FinishDate2Name = ''
-	FinishDateId = '42432'
+	FinishDateId = '42433'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -957,8 +957,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8500,66666666667'
-	Minimum = '8247,33333333333'
+	Maximum = '8534,44444444445'
+	Minimum = '8245,55555555555'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -2111,9 +2111,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42432'
+	FinishDate2Id = '42433'
 	FinishDate2Name = ''
-	FinishDateId = '42432'
+	FinishDateId = '42433'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -2164,8 +2164,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8497,94444444445'
-	Minimum = '8299,05555555555'
+	Maximum = '8531,72222222222'
+	Minimum = '8297,27777777778'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -3166,9 +3166,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42432'
+	FinishDate2Id = '42433'
 	FinishDate2Name = ''
-	FinishDateId = '42432'
+	FinishDateId = '42433'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -3219,8 +3219,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '19121875,2561646'
-	Minimum = '-19099003,2561647'
+	Maximum = '21245257,3957384'
+	Minimum = '-21222385,3957386'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -4233,7 +4233,7 @@
 	Value = '0'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_filePath]
-	Value = '"Z:\ep.txt"'
+	Value = '"D:\ep.txt"'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_filterSD]
 	IsInputOptimizable = '1'
@@ -4284,11 +4284,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_lastDate]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1160302'
-	Start2 = '1160302'
+	LocalCurrentValue2 = '1160303'
+	Start2 = '1160303'
 	Step2 = '1'
-	Stop2 = '1160302'
-	Value = '1160302'
+	Stop2 = '1160303'
+	Value = '1160303'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_levelDiffPercent]
 	IsInputOptimizable = '1'
@@ -4401,11 +4401,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_nextOpen]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '8410'
-	Start2 = '8410'
+	LocalCurrentValue2 = '8466'
+	Start2 = '8466'
 	Step2 = '1'
-	Stop2 = '8410'
-	Value = '8410'
+	Stop2 = '8466'
+	Value = '8466'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_outSD]
 	IsInputOptimizable = '1'
@@ -4441,11 +4441,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_rangeReq]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '20'
-	Start2 = '20'
+	LocalCurrentValue2 = '0'
+	Start2 = '0'
 	Step2 = '1'
-	Stop2 = '20'
-	Value = '20'
+	Stop2 = '0'
+	Value = '0'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_smoothLen1]
 	IsInputOptimizable = '1'
@@ -4472,7 +4472,7 @@
 	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_startTimeFilePath]
-	Value = '"Z:\starttime.txt"'
+	Value = '"D:\HHI_starttime.txt"'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_stochLength]
 	IsInputOptimizable = '1'
