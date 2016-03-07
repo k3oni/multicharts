@@ -13,14 +13,14 @@
 	ContainerHeight = '885'
 	ContainerWidth = '1709'
 	Flags = '2'
-	Height = '908'
+	Height = '899'
 	Left = '0'
 	MinX = '-1'
 	MinY = '-1'
 	State = '3'
 	Top = '0'
 	ViewType = '0'
-	Width = '2345'
+	Width = '2947'
 
 [Wsp\Window_0\ChartManager]
 	ChartCount = '5'
@@ -71,9 +71,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42433'
+	FinishDate2Id = '42436'
 	FinishDate2Name = ''
-	FinishDateId = '42433'
+	FinishDateId = '42436'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -124,8 +124,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8531,72222222222'
-	Minimum = '8297,27777777778'
+	Maximum = '8751,44444444445'
+	Minimum = '8422,55555555555'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -904,9 +904,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42433'
+	FinishDate2Id = '42436'
 	FinishDate2Name = ''
-	FinishDateId = '42433'
+	FinishDateId = '42436'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -957,8 +957,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8534,44444444445'
-	Minimum = '8245,55555555555'
+	Maximum = '8751,5'
+	Minimum = '8421,5'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -2111,9 +2111,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42433'
+	FinishDate2Id = '42436'
 	FinishDate2Name = ''
-	FinishDateId = '42433'
+	FinishDateId = '42436'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -2164,8 +2164,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8531,72222222222'
-	Minimum = '8297,27777777778'
+	Maximum = '8751'
+	Minimum = '8431'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -3166,9 +3166,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42433'
+	FinishDate2Id = '42436'
 	FinishDate2Name = ''
-	FinishDateId = '42433'
+	FinishDateId = '42436'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -3219,8 +3219,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '21245257,3957384'
-	Minimum = '-21222385,3957386'
+	Maximum = '26226030,3157265'
+	Minimum = '-26203158,3157267'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -4130,7 +4130,7 @@
 	isStatusWindowShow = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0]
-	IdName = 'sb_GenerateEP4b2e3'
+	IdName = 'sb_GenerateEP4b2e3_transition_day'
 	Status = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper]
@@ -4150,11 +4150,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_BBLength_Min8_2std]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '20'
-	Start2 = '20'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '20'
-	Value = '20'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_EMALength]
 	IsInputOptimizable = '1'
@@ -4284,11 +4284,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_lastDate]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1160303'
-	Start2 = '1160303'
+	LocalCurrentValue2 = '1160304'
+	Start2 = '1160304'
 	Step2 = '1'
-	Stop2 = '1160303'
-	Value = '1160303'
+	Stop2 = '1160304'
+	Value = '1160304'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_levelDiffPercent]
 	IsInputOptimizable = '1'
@@ -4401,11 +4401,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_nextOpen]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '8466'
-	Start2 = '8466'
+	LocalCurrentValue2 = '8649'
+	Start2 = '8649'
 	Step2 = '1'
-	Stop2 = '8466'
-	Value = '8466'
+	Stop2 = '8649'
+	Value = '8649'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_outSD]
 	IsInputOptimizable = '1'
@@ -4482,7 +4482,23 @@
 	Stop2 = '6'
 	Value = '6'
 
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_transitionDayLevelRatio]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '2,8'
+	Start2 = '2,8'
+	Step2 = '1'
+	Stop2 = '2,8'
+	Value = '2.8'
+
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_useMinimalLevelDiff]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
+	Step2 = '1'
+	Stop2 = '1'
+	Value = '1'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_useTransitionDay]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
@@ -4647,7 +4663,7 @@
 	Confirm = 'False'
 	NeedActivateAT = 'False'
 	Profile = 'Interactive Brokers'
-	StrategyName = 'GenerateEP4.3'
+	StrategyName = 'GenerateEP4.3_transition_day'
 	SymbolName = 'HHIA - 1 Hour - Interactive Brokers'
 
 [Wsp\Window_0\ChartManager\Strategy\StrategyHelper\OptimizerProperties\Algorithm_0]
