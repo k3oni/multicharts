@@ -10,17 +10,17 @@
 	WindowCount = '0'
 
 [Wsp\Window_0]
-	ContainerHeight = '885'
+	ContainerHeight = '925'
 	ContainerWidth = '1709'
 	Flags = '2'
-	Height = '877'
+	Height = '907'
 	Left = '0'
 	MinX = '-1'
 	MinY = '-1'
 	State = '3'
 	Top = '0'
 	ViewType = '0'
-	Width = '1911'
+	Width = '2401'
 
 [Wsp\Window_0\ChartManager]
 	ChartCount = '5'
@@ -71,9 +71,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42436'
+	FinishDate2Id = '42438'
 	FinishDate2Name = ''
-	FinishDateId = '42436'
+	FinishDateId = '42438'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -124,15 +124,15 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8758,66666666667'
-	Minimum = '8285,33333333333'
+	Maximum = '8732,7147572149'
+	Minimum = '8341,53018421215'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
 	OverlayDataSeries = 'False'
 	PriceRange.Above = '1,79769313486232E+308'
 	PriceRange.Below = '1,79769313486232E+308'
-	ScaleType = '0'
+	ScaleType = '2'
 	UseMargins = '1'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_0\LabelProcessingObject]
@@ -904,9 +904,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42436'
+	FinishDate2Id = '42438'
 	FinishDate2Name = ''
-	FinishDateId = '42436'
+	FinishDateId = '42438'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -957,8 +957,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8758,72222222222'
-	Minimum = '8284,27777777778'
+	Maximum = '8756,77777777778'
+	Minimum = '8321,22222222222'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -1759,10 +1759,10 @@
 	UserBarRef = '50'
 
 [Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_OverBought]
-	Value = '70'
+	Value = '80'
 
 [Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_OverSold]
-	Value = '30'
+	Value = '20'
 
 [Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_PriceC]
 	Value = 'close'
@@ -1946,10 +1946,10 @@
 	UserBarRef = '50'
 
 [Wsp\Window_0\ChartManager\Chart_3\Series_0\IndicatorHelper\InputHelper\Input_OverBought]
-	Value = '70'
+	Value = '80'
 
 [Wsp\Window_0\ChartManager\Chart_3\Series_0\IndicatorHelper\InputHelper\Input_OverSold]
-	Value = '30'
+	Value = '20'
 
 [Wsp\Window_0\ChartManager\Chart_3\Series_0\IndicatorHelper\InputHelper\Input_PriceC]
 	Value = 'close'
@@ -2111,9 +2111,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42436'
+	FinishDate2Id = '42438'
 	FinishDate2Name = ''
-	FinishDateId = '42436'
+	FinishDateId = '42438'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -2164,8 +2164,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8758,66666666667'
-	Minimum = '8285,33333333333'
+	Maximum = '8756,77777777778'
+	Minimum = '8321,22222222222'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -2929,9 +2929,9 @@
 	Type = '4'
 
 [Wsp\Window_0\ChartManager\IndexViewCalc]
-	BarSpacing = '12'
-	BarsToRight = '0'
-	BarsToRightValue = '0'
+	BarSpacing = '8'
+	BarsToRight = '35,7487922705314'
+	BarsToRightValue = '74'
 	ChartShiftViewType = '0'
 	ShowEmptyPeriod = '0'
 
@@ -3166,9 +3166,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42436'
+	FinishDate2Id = '42438'
 	FinishDate2Name = ''
-	FinishDateId = '42436'
+	FinishDateId = '42438'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -3219,8 +3219,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '26226030,3157265'
-	Minimum = '-26203158,3157267'
+	Maximum = '32375132,6860821'
+	Minimum = '-32352260,6860823'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -4268,11 +4268,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_lastDate]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1160224'
-	Start2 = '1160224'
+	LocalCurrentValue2 = '1160308'
+	Start2 = '1160308'
 	Step2 = '1'
-	Stop2 = '1160224'
-	Value = '1160224'
+	Stop2 = '1160308'
+	Value = '1160308'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_levelDiffPercent]
 	IsInputOptimizable = '1'
@@ -4385,11 +4385,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_nextOpen]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '8038'
-	Start2 = '8038'
+	LocalCurrentValue2 = '8467'
+	Start2 = '8467'
 	Step2 = '1'
-	Stop2 = '8038'
-	Value = '8038'
+	Stop2 = '8467'
+	Value = '8467'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_outSD]
 	IsInputOptimizable = '1'
