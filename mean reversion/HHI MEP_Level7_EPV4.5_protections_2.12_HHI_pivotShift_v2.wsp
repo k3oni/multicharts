@@ -13,14 +13,14 @@
 	ContainerHeight = '885'
 	ContainerWidth = '1709'
 	Flags = '2'
-	Height = '841'
+	Height = '700'
 	Left = '0'
 	MinX = '-1'
 	MinY = '-1'
 	State = '3'
 	Top = '0'
 	ViewType = '0'
-	Width = '3381'
+	Width = '3016'
 
 [Wsp\Window_0\ChartManager]
 	ChartCount = '1'
@@ -71,9 +71,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42485'
+	FinishDate2Id = '42495'
 	FinishDate2Name = ''
-	FinishDateId = '42485'
+	FinishDateId = '42495'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -124,8 +124,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '9534,78506330823'
-	Minimum = '8589,13031186969'
+	Maximum = '8813,45049164098'
+	Minimum = '8452,94703956427'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -928,9 +928,6 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_EMALength]
 	Value = '6'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_EP_region]
-	Value = '30'
-
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8BB_Short_marketclose]
 	Value = '1420'
 
@@ -1127,7 +1124,7 @@
 	Value = '0'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_firstDayFinishExtremeDayRatio]
-	Value = '2.8'
+	Value = '1.6'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_firstTradingDayOfMonth_levelRatio]
 	Value = '2.2'
@@ -1301,9 +1298,6 @@
 	Value = '1'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_useHighLowBreak]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_EP_openClose2StdDaily]
 	Value = '1'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_ExpiryDays]
@@ -1596,8 +1590,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '9534,78506330823'
-	Minimum = '8589,13031186969'
+	Maximum = '8813,45049164098'
+	Minimum = '8452,94703956427'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -1628,7 +1622,7 @@
 	Suffix = 'b'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\ShortTechInfo]
-	IdName = 'ib_MEPIndicator_Level7_EPV4b2e5_protection_2b2e13_EP_close2std'
+	IdName = 'ib_MEPIndicator_Level7_EPV4b2e5_protection_2b2e12_pivotShift_V2'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\VolumeObject]
 	VolumeBarWidth = '1'
@@ -1661,9 +1655,9 @@
 	Type = '4'
 
 [Wsp\Window_0\ChartManager\IndexViewCalc]
-	BarSpacing = '1'
-	BarsToRight = '11,7328519855596'
-	BarsToRightValue = '195'
+	BarSpacing = '4'
+	BarsToRight = '49,3373493975903'
+	BarsToRightValue = '205'
 	ChartShiftViewType = '0'
 	ShowEmptyPeriod = '0'
 
@@ -1898,9 +1892,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42485'
+	FinishDate2Id = '42495'
 	FinishDate2Name = ''
-	FinishDateId = '42485'
+	FinishDateId = '42495'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -2725,9 +2719,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42485'
+	FinishDate2Id = '42495'
 	FinishDate2Name = ''
-	FinishDateId = '42485'
+	FinishDateId = '42495'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -3552,9 +3546,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42485'
+	FinishDate2Id = '42495'
 	FinishDate2Name = ''
-	FinishDateId = '42485'
+	FinishDateId = '42495'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -3605,8 +3599,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '9479,47037647728'
-	Minimum = '7800,52962352273'
+	Maximum = '10395,1240170641'
+	Minimum = '6884,87598293597'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -4357,7 +4351,7 @@
 	IntervalType = '0'
 	IsAnchored = '0'
 	IsDefaultInitNeeded = '0'
-	OOS_size = '21456'
+	OOS_size = '2145'
 
 [Wsp\Window_0\ChartManager\PriceScale]
 	Left Characters = '7'
@@ -4516,7 +4510,7 @@
 	isStatusWindowShow = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0]
-	IdName = 'sb_MEPStrategy_Level7_EP4b2e5_protection_2b2e13_EP_close2std'
+	IdName = 'sb_MEPStrategy_Level7_EP4b2e5_protection_2b2e12_HHI_pivotShift_v2'
 	Status = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper]
@@ -4549,14 +4543,6 @@
 	Step2 = '1'
 	Stop2 = '6'
 	Value = '6'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_EP_region]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '30'
-	Start2 = '30'
-	Step2 = '1'
-	Stop2 = '30'
-	Value = '30'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_Min8BB_Short_marketclose]
 	IsInputOptimizable = '1'
@@ -5087,11 +5073,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_firstTradingDayOfMonth_levelRatio]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '2,2'
-	Start2 = '2,2'
+	LocalCurrentValue2 = '2'
+	Start2 = '2'
 	Step2 = '1'
-	Stop2 = '2,2'
-	Value = '2.2'
+	Stop2 = '2'
+	Value = '2'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_fixcost]
 	IsInputOptimizable = '1'
@@ -5145,45 +5131,45 @@
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelDown2]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelDown3]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelDown4]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelDown5]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
-	Start2 = '0'
+	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
+	Stop2 = '1'
 	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelDown6]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
-	Start2 = '0'
+	Start2 = '1'
 	Step2 = '1'
 	Stop2 = '1'
 	Value = '1'
@@ -5191,55 +5177,55 @@
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelDown7]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
-	Start2 = '0'
+	Start2 = '1'
 	Step2 = '1'
 	Stop2 = '1'
-	Value = '0'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelUp1]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelUp2]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelUp3]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelUp4]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelUp5]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
-	Start2 = '0'
+	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '2'
+	Stop2 = '1'
 	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelUp6]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
-	Start2 = '0'
+	Start2 = '1'
 	Step2 = '1'
 	Stop2 = '1'
 	Value = '1'
@@ -5247,10 +5233,10 @@
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_initposPerLevelUp7]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
-	Start2 = '0'
+	Start2 = '1'
 	Step2 = '1'
 	Stop2 = '1'
-	Value = '0'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_levelDiff1Percent]
 	IsInputOptimizable = '1'
@@ -5400,27 +5386,27 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_shiftEP_WindowSize]
 	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '9'
+	Start2 = '9'
+	Step2 = '1'
+	Stop2 = '9'
+	Value = '9'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_shiftEP_lookbackWindow]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '60'
+	Start2 = '60'
+	Step2 = '1'
+	Stop2 = '60'
+	Value = '60'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_shiftEP_maxLevelRisk]
+	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '5'
 	Start2 = '5'
 	Step2 = '1'
 	Stop2 = '5'
 	Value = '5'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_shiftEP_lookbackWindow]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '30'
-	Start2 = '30'
-	Step2 = '1'
-	Stop2 = '30'
-	Value = '30'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_shiftEP_maxLevelRisk]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '4'
-	Start2 = '4'
-	Step2 = '1'
-	Stop2 = '4'
-	Value = '4'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_shiftEP_maxPivotNum]
 	IsInputOptimizable = '1'
@@ -5472,11 +5458,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_showLog]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '0'
-	Start2 = '0'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
 	Step2 = '1'
-	Stop2 = '0'
-	Value = '0'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_smoothLen1]
 	IsInputOptimizable = '1'
@@ -5685,14 +5671,6 @@
 	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_useTransitionDay]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_EP_openClose2StdDaily]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
@@ -6116,7 +6094,7 @@
 	Confirm = 'False'
 	NeedActivateAT = 'False'
 	Profile = 'Interactive Brokers'
-	StrategyName = 'MEPStrategy_Level7_EP4.5_protection_2.13_EP_close2std; !optimize by Sharpe ratio!'
+	StrategyName = 'MEPStrategy_Level7_EP4.5_protection_2.12_HHI_pivotShift_v2; !optimize by Sharpe ratio!'
 	SymbolName = 'HHIA - 1 Minute - Interactive Brokers'
 
 [Wsp\Window_0\ChartManager\Strategy\StrategyHelper\OptimizerProperties\Algorithm_0]
@@ -6187,10 +6165,10 @@ The reserved words supported in Portfolio optimization:
 * CustomFitnessValue
 
 */'
-	CriteriaDirection = '0'
+	CriteriaDirection = '1'
 	CriteriaIndex = '18'
 	CriteriaType = '0'
-	Limits = '1000000'
+	Limits = '100000'
 	UseLimits = '-1'
 
 [Wsp\Window_0\ChartManager\Strategy\StrategyHelper\OptimizerProperties\Algorithm_1]
