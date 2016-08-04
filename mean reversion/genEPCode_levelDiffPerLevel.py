@@ -95,7 +95,7 @@ def printLevel_i_Level_i_minus_1(level):
 	levelBelowII1 = levelNum - level - 1
 	interval = 'L-' + str(level) + 'L-' + str(level-1) 
 
-	print("if " + close + ">=" + ep + "-" + str(level) + "*" \
+	print("if " + close + ">=" + ep + "-" \
 			+ genAccumulateLevelDiff(level) + " and close<" + ep + "-" + genAccumulateLevelDiff(level-1) \
 			+ " then begin ")
 	
