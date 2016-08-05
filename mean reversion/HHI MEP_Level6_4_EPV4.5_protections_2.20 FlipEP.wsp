@@ -10,20 +10,20 @@
 	WindowCount = '0'
 
 [Wsp\Window_0]
-	ContainerHeight = '885'
+	ContainerHeight = '925'
 	ContainerWidth = '1709'
 	Flags = '2'
-	Height = '700'
+	Height = '100'
 	Left = '0'
 	MinX = '-1'
 	MinY = '-1'
 	State = '3'
 	Top = '0'
 	ViewType = '0'
-	Width = '3016'
+	Width = '1705'
 
 [Wsp\Window_0\ChartManager]
-	ChartCount = '1'
+	ChartCount = '3'
 	OFFSeriesCount = '3'
 
 [Wsp\Window_0\ChartManager\Background]
@@ -34,7 +34,7 @@
 
 [Wsp\Window_0\ChartManager\Chart_0]
 	LSeriesNum = '0'
-	PencentHeight = '1'
+	PencentHeight = '0,6'
 	RSeriesNum = '0'
 	SeriesCount = '2'
 
@@ -71,9 +71,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42495'
+	FinishDate2Id = '42583'
 	FinishDate2Name = ''
-	FinishDateId = '42495'
+	FinishDateId = '42583'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -96,7 +96,7 @@
 	ResolutionName = 'Minute'
 	ResolutionSizeId = '1'
 	ResolutionSizeName = ''
-	SessionsId = '126'
+	SessionsId = '128'
 	SessionsName = 'HKFE'
 	ShowPercent = '0'
 	ShowPhantomBars = '1'
@@ -124,8 +124,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8813,45049164098'
-	Minimum = '8452,94703956427'
+	Maximum = '9234,59321503714'
+	Minimum = '8470,90897670172'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -922,68 +922,17 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_BBLength]
 	Value = '20'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_CloseOpenGap_marketclose]
-	Value = '1430'
-
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_EMALength]
 	Value = '6'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8BB_Short_marketclose]
-	Value = '1420'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8BB_levelRisk]
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8BB_signalbarnum]
-	Value = '4'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8BB_strengthPercent]
-	Value = '0.007'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Long_levelRisk]
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Long_marketclose]
-	Value = '1610'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Long_signalbarnum]
-	Value = '17'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Long_strength]
-	Value = '0.01'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Long_tolerance]
-	Value = '0.001'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8OpenBar_BBLength]
-	Value = '20'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8OpenBar_inSD]
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_EPFlip_LevelRatio]
 	Value = '2'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8OpenBar_outSD]
-	Value = '3'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8OpenBar_rangeFor2stdRatio]
-	Value = '0.2'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8OpenBar_rangeFor3stdRatio]
-	Value = '0.2'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Protection_ResumeMaxPostion]
-	Value = '5'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Short_levelRisk]
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_EPFlip_LevelRisk]
 	Value = '0'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Short_signalbarnum]
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_EPFlip_previousDayNum]
 	Value = '4'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Short_strength]
-	Value = '0.01'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_Min8Short_tolerance]
-	Value = '0'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_SDLength]
 	Value = '20'
@@ -997,47 +946,8 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_close8MinBar]
 	Value = 'close data4'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_closeOpenGap_gapratio]
-	Value = '0.014'
-
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_cons]
 	Value = '2'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_daily_gap]
-	Value = '0.015'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_daily_lookbackWindow]
-	Value = '40'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_daily_maxPivotNum]
-	Value = '200'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_daily_pivotRequiredForConsolidation]
-	Value = '4'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_daily_rangeRequiredForConsolidation]
-	Value = '150'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_daily_windowSize]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_hourly_gap]
-	Value = '0.015'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_hourly_lookbackWindow]
-	Value = '40'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_hourly_maxPivotNum]
-	Value = '200'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_hourly_pivotRequiredForConsolidation]
-	Value = '4'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_hourly_rangeRequiredForConsolidation]
-	Value = '150'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_consolidationBreakout_hourly_windowSize]
-	Value = '3'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_constDay]
 	Value = '1'
@@ -1057,57 +967,6 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_dayBarOpen]
 	Value = 'open data3'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_down1]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_down2]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_down3]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_down4]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_down5]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_down6]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_down7]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_up1]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_up2]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_up3]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_up4]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_up5]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_up6]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_inc_up7]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_stochLen1_fast]
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_stochLen2_fast]
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_disturbedEP_stochLength_fast]
-	Value = '1'
-
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_expiryDayLevelRisk]
 	Value = '0'
 
@@ -1123,8 +982,11 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_f6]
 	Value = '0'
 
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_filterSD]
+	Value = '3'
+
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_firstDayFinishExtremeDayRatio]
-	Value = '1.6'
+	Value = '2.8'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_firstTradingDayOfMonth_levelRatio]
 	Value = '2.2'
@@ -1134,9 +996,6 @@
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_high8MinBar]
 	Value = 'high data4'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_highLowBreak_starttime]
-	Value = '1400'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_hrBarClose]
 	Value = 'close data2'
@@ -1153,7 +1012,7 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_inSD]
 	Value = '2'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelDiffPercent]
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelDiff1Percent]
 	Value = '0.004'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelDiff_minimum]
@@ -1162,28 +1021,16 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelNum]
 	Value = '7'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRatio]
-	Value = '1.5'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRatio_1.75std_2std]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRatio_1std_1.25std]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRatio_l.25std_1.5std]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRatio_l.5std_1.75std]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRatio_less1std]
-	Value = '1'
-
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRatio_more2std]
 	Value = '1.8'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRisk]
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRiskConfig]
+	Value = '2'
+
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRisk_dailyExtremeDay]
+	Value = '3'
+
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_levelRisk_weeklyExtremeDay]
 	Value = '3'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_low8MinBar]
@@ -1191,6 +1038,12 @@
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_markclose]
 	Value = '1615'
+
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_marketopen]
+	Value = '916'
+
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_maxPosition]
+	Value = '10'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_minBarClose]
 	Value = 'close data1'
@@ -1207,35 +1060,17 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_open8MinBar]
 	Value = 'open data4'
 
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_openClose2Std_levelRatio]
+	Value = '1.6'
+
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_openClose2std_region]
+	Value = '50'
+
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_outSD]
 	Value = '3'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_shiftEP_WindowSize]
-	Value = '9'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_shiftEP_lookbackWindow]
-	Value = '60'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_shiftEP_maxLevelRisk]
-	Value = '5'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_shiftEP_maxPivotNum]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_shiftEP_maxShift]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_shiftEP_pivotType_PriceLargeThanEP]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_shiftEP_pivotType_PriceLessThanEP]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_shiftEP_shiftType_PriceLargeThanEP]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_shiftEP_shiftType_PriceLessThanEP]
-	Value = '1'
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_showDate]
+	Value = '0'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_showLog]
 	Value = '0'
@@ -1252,52 +1087,13 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_stochLength]
 	Value = '6'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_thres]
-	Value = '5'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_timeSkewOut_corssEP_starttime]
-	Value = '1400'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_timeSkewOut_epCrossPos]
-	Value = '2'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_timeSkewOut_extraPos]
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_useTransitionDay]
 	Value = '1'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_timeSkewOut_noEntrySince]
-	Value = '1550'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_timeSkewOut_reduce_endtime]
-	Value = '1610'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_timeSkewOut_reduce_interval]
-	Value = '15'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_timeSkewOut_reduce_pos]
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_EPFlip]
 	Value = '1'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_timeSkewOut_reduce_starttime]
-	Value = '1500'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_timeSkewOut_startTime]
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use8MinBB]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use8MinLong]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use8MinOpenBar]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use8MinShort]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_useCloseOpenGap]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_useHighLowBreak]
+[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_EP_openClose2StdDaily]
 	Value = '1'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_ExpiryDays]
@@ -1306,32 +1102,8 @@
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_LevelDiffMinimum]
 	Value = '1'
 
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_consolidationBreakout_daily]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_consolidationBreakout_hourly]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_disturbedEP]
-	Value = '0'
-
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_firstTradingDayOfMonth]
 	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_shiftEP]
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_timeSkewOut_crossEP]
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_timeSkewOut_limit]
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_timeSkewOut_noEntryAtMarketEnd]
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_timeSkewOut_reduce]
-	Value = '0'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\IndicatorHelper\InputHelper\Input_use_weeklyExtremeDay]
 	Value = '1'
@@ -1403,7 +1175,7 @@
 	DefAlign = '2'
 	DefBKColor = '0'
 	DefColor = '255'
-	DefColor2 = '16711680'
+	DefColor2 = '255'
 	DefDecimals = '5'
 	DefFormat = '1'
 	DefShowLastPriceMarker = '-1'
@@ -1499,7 +1271,7 @@
 	DefAlign = '2'
 	DefBKColor = '0'
 	DefColor = '255'
-	DefColor2 = '16776960'
+	DefColor2 = '255'
 	DefDecimals = '5'
 	DefFormat = '1'
 	DefShowLastPriceMarker = '-1'
@@ -1511,7 +1283,7 @@
 	DefAlign = '2'
 	DefBKColor = '0'
 	DefColor = '255'
-	DefColor2 = '65535'
+	DefColor2 = '255'
 	DefDecimals = '5'
 	DefFormat = '1'
 	DefShowLastPriceMarker = '-1'
@@ -1590,8 +1362,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '8813,45049164098'
-	Minimum = '8452,94703956427'
+	Maximum = '9234,59321503714'
+	Minimum = '8470,90897670172'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -1622,9 +1394,320 @@
 	Suffix = 'b'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\ShortTechInfo]
-	IdName = 'ib_MEPIndicator_Level7_EPV4b2e5_protection_2b2e12_pivotShift_V2'
+	IdName = 'ib_MEPIndicator_Level6_4_EPV4b2e5_protection_2b2e20_EPFlip'
 
 [Wsp\Window_0\ChartManager\Chart_0\Series_1\VolumeObject]
+	VolumeBarWidth = '1'
+	VolumeBarsBackCount = '100'
+	VolumeBarsType = '0'
+	VolumeDataRangeType = '3'
+	VolumePlotNumber = '0'
+
+[Wsp\Window_0\ChartManager\Chart_1]
+	LSeriesNum = '0'
+	PencentHeight = '0,2'
+	RSeriesNum = '0'
+	SeriesCount = '1'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0]
+	CalcRealTimeAsHistory = '1'
+	DrawingsCount = '0'
+	SeriesType = '0'
+	Status = '1'
+	UpdateOnEveryTick = '1'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\AlertObject]
+	AlertEnable = '0'
+	AlertType = '1'
+	PropertyCount = '8'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\AlertObject\Property_0]
+	PropertyName = '_Audio_Enable'
+	PropertyValue = '1'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\AlertObject\Property_1]
+	PropertyName = '_Audio_Sound'
+	PropertyValue = '1'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\AlertObject\Property_2]
+	PropertyName = '_Audio_Sound_File'
+	PropertyValue = 'ding.wav'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\AlertObject\Property_3]
+	PropertyName = '_Audio_Sound_Repeat'
+	PropertyValue = '0'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\AlertObject\Property_4]
+	PropertyName = '_Visual_Enable'
+	PropertyValue = '1'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\AlertObject\Property_5]
+	PropertyName = '_Visual_Timeout'
+	PropertyValue = '5'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\AlertObject\Property_6]
+	PropertyName = '_Email_Enable'
+	PropertyValue = '0'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\AlertObject\Property_7]
+	PropertyName = '_Email_Subject'
+	PropertyValue = 'MultiCharts64 Alert'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\IndicatorHelper]
+	BaseDataNumber = '0'
+	CalcRealTimeAsHistory = '1'
+	PersistentContent = ''
+	SkipIdenticalTicks = '1'
+	UpdateEveryTick = '1'
+	UpdateOnEveryTick = '1'
+	UserBarMode = '0'
+	UserBarRef = '50'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\IndicatorHelper\PlotHelper\Plot_1]
+	DefAlign = '2'
+	DefBKColor = '0'
+	DefColor = '255'
+	DefColor2 = '255'
+	DefDecimals = '5'
+	DefFormat = '1'
+	DefShowLastPriceMarker = '-1'
+	DefStyle = '0'
+	DefWidth = '0'
+	PlotType = '1'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\IntervalObject]
+	AxisType = '0'
+	Center = '0'
+	CustomNullsCount = '-1'
+	CustomNullsCountEnable = 'False'
+	Fixed Label Number = '10'
+	Fixed Step Size = '0,01'
+	Label Increment Mode = '1'
+	ManualMode = '0'
+	MarginBottom = '5'
+	MarginTop = '5'
+	Maximum = '3210,68285504047'
+	Minimum = '-1333,76158940397'
+	MovementSize.Long = '1'
+	MovementSize.Metric = 'False'
+	MovementSize.Price = '5'
+	PriceRange.Above = '1,79769313486232E+308'
+	PriceRange.Below = '1,79769313486232E+308'
+	ScaleType = '2'
+	UseMargins = '1'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\LabelProcessingObject]
+	AutoMode = '1'
+	EnableProcessing = '0'
+	PriceScaleType = '2'
+	SelectedId = '0'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\LabelProcessingObject\Item 0]
+	Suffix = 'x'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\LabelProcessingObject\Item 1]
+	Suffix = 'c'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\LabelProcessingObject\Item 2]
+	Suffix = 'k'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\LabelProcessingObject\Item 3]
+	Suffix = 'm'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\LabelProcessingObject\Item 4]
+	Suffix = 'b'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\ShortTechInfo]
+	IdName = 'i_Volume'
+
+[Wsp\Window_0\ChartManager\Chart_1\Series_0\VolumeObject]
+	VolumeBarWidth = '1'
+	VolumeBarsBackCount = '100'
+	VolumeBarsType = '0'
+	VolumeDataRangeType = '3'
+	VolumePlotNumber = '0'
+
+[Wsp\Window_0\ChartManager\Chart_2]
+	LSeriesNum = '0'
+	PencentHeight = '0,2'
+	RSeriesNum = '0'
+	SeriesCount = '1'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0]
+	CalcRealTimeAsHistory = '1'
+	DrawingsCount = '0'
+	SeriesType = '0'
+	Status = '1'
+	UpdateOnEveryTick = '1'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\AlertObject]
+	AlertEnable = '0'
+	AlertType = '1'
+	PropertyCount = '8'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\AlertObject\Property_0]
+	PropertyName = '_Audio_Enable'
+	PropertyValue = '1'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\AlertObject\Property_1]
+	PropertyName = '_Audio_Sound'
+	PropertyValue = '1'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\AlertObject\Property_2]
+	PropertyName = '_Audio_Sound_File'
+	PropertyValue = 'ding.wav'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\AlertObject\Property_3]
+	PropertyName = '_Audio_Sound_Repeat'
+	PropertyValue = '0'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\AlertObject\Property_4]
+	PropertyName = '_Visual_Enable'
+	PropertyValue = '1'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\AlertObject\Property_5]
+	PropertyName = '_Visual_Timeout'
+	PropertyValue = '5'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\AlertObject\Property_6]
+	PropertyName = '_Email_Enable'
+	PropertyValue = '0'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\AlertObject\Property_7]
+	PropertyName = '_Email_Subject'
+	PropertyValue = 'MultiCharts64 Alert'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper]
+	BaseDataNumber = '2'
+	CalcRealTimeAsHistory = '1'
+	PersistentContent = ''
+	SkipIdenticalTicks = '1'
+	UpdateEveryTick = '1'
+	UpdateOnEveryTick = '1'
+	UserBarMode = '0'
+	UserBarRef = '50'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_OverBought]
+	Value = '80'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_OverSold]
+	Value = '20'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_PriceC]
+	Value = 'close'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_PriceH]
+	Value = 'high'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_PriceL]
+	Value = 'low'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_SmoothingLength1]
+	Value = '7'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_SmoothingLength2]
+	Value = '3'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_SmoothingType]
+	Value = '1'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\InputHelper\Input_StochLength]
+	Value = '6'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\PlotHelper\Plot_1]
+	DefAlign = '2'
+	DefBKColor = '0'
+	DefColor = '16776960'
+	DefColor2 = '16776960'
+	DefDecimals = '5'
+	DefFormat = '1'
+	DefShowLastPriceMarker = '-1'
+	DefStyle = '0'
+	DefWidth = '0'
+	PlotType = '0'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\PlotHelper\Plot_2]
+	DefAlign = '2'
+	DefBKColor = '0'
+	DefColor = '255'
+	DefColor2 = '255'
+	DefDecimals = '5'
+	DefFormat = '1'
+	DefShowLastPriceMarker = '-1'
+	DefStyle = '0'
+	DefWidth = '0'
+	PlotType = '0'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\PlotHelper\Plot_3]
+	DefAlign = '2'
+	DefBKColor = '0'
+	DefColor = '32768'
+	DefColor2 = '32768'
+	DefDecimals = '5'
+	DefFormat = '1'
+	DefShowLastPriceMarker = '-1'
+	DefStyle = '0'
+	DefWidth = '0'
+	PlotType = '0'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IndicatorHelper\PlotHelper\Plot_4]
+	DefAlign = '2'
+	DefBKColor = '0'
+	DefColor = '32768'
+	DefColor2 = '32768'
+	DefDecimals = '5'
+	DefFormat = '1'
+	DefShowLastPriceMarker = '-1'
+	DefStyle = '0'
+	DefWidth = '0'
+	PlotType = '0'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\IntervalObject]
+	AxisType = '0'
+	Center = '0'
+	CustomNullsCount = '-1'
+	CustomNullsCountEnable = 'False'
+	Fixed Label Number = '10'
+	Fixed Step Size = '0,01'
+	Label Increment Mode = '1'
+	ManualMode = '0'
+	MarginBottom = '5'
+	MarginTop = '5'
+	Maximum = '83,3333333333333'
+	Minimum = '16,6666666666667'
+	MovementSize.Long = '1'
+	MovementSize.Metric = 'False'
+	MovementSize.Price = '5'
+	PriceRange.Above = '1,79769313486232E+308'
+	PriceRange.Below = '1,79769313486232E+308'
+	ScaleType = '0'
+	UseMargins = '1'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\LabelProcessingObject]
+	AutoMode = '1'
+	EnableProcessing = '0'
+	PriceScaleType = '2'
+	SelectedId = '0'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\LabelProcessingObject\Item 0]
+	Suffix = 'x'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\LabelProcessingObject\Item 1]
+	Suffix = 'c'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\LabelProcessingObject\Item 2]
+	Suffix = 'k'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\LabelProcessingObject\Item 3]
+	Suffix = 'm'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\LabelProcessingObject\Item 4]
+	Suffix = 'b'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\ShortTechInfo]
+	IdName = 'ib_Stochasticb20Slow'
+
+[Wsp\Window_0\ChartManager\Chart_2\Series_0\VolumeObject]
 	VolumeBarWidth = '1'
 	VolumeBarsBackCount = '100'
 	VolumeBarsType = '0'
@@ -1655,9 +1738,9 @@
 	Type = '4'
 
 [Wsp\Window_0\ChartManager\IndexViewCalc]
-	BarSpacing = '4'
-	BarsToRight = '49,3373493975903'
-	BarsToRightValue = '205'
+	BarSpacing = '0,333333333333333'
+	BarsToRight = '0'
+	BarsToRightValue = '0'
 	ChartShiftViewType = '0'
 	ShowEmptyPeriod = '0'
 
@@ -1892,9 +1975,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42495'
+	FinishDate2Id = '42583'
 	FinishDate2Name = ''
-	FinishDateId = '42495'
+	FinishDateId = '42583'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -1945,8 +2028,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '-1,79769313486232E+308'
-	Minimum = '1,79769313486232E+308'
+	Maximum = '22632,6001050209'
+	Minimum = '-6006,60010502102'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -2719,9 +2802,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42495'
+	FinishDate2Id = '42583'
 	FinishDate2Name = ''
-	FinishDateId = '42495'
+	FinishDateId = '42583'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -2772,8 +2855,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '-1,79769313486232E+308'
-	Minimum = '1,79769313486232E+308'
+	Maximum = '16877,2468080434'
+	Minimum = '218,753191956703'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -3530,7 +3613,7 @@
 	BackTypeId = '275'
 	BackTypeName = 'Bars Back'
 	BreakOnSession = '0'
-	BuildDayFromMinutes = '0'
+	BuildDayFromMinutes = '1'
 	CallPut = '0'
 	CapacityId = '80'
 	CapacityName = ''
@@ -3546,9 +3629,9 @@
 	ExpirationDate = '0'
 	FieldId = '201'
 	FieldName = 'Trade'
-	FinishDate2Id = '42495'
+	FinishDate2Id = '42583'
 	FinishDate2Name = ''
-	FinishDateId = '42495'
+	FinishDateId = '42583'
 	FinishDateName = ''
 	FootPrintChartType = '0'
 	KagiReversal = '10'
@@ -3599,8 +3682,8 @@
 	ManualMode = '0'
 	MarginBottom = '5'
 	MarginTop = '5'
-	Maximum = '10395,1240170641'
-	Minimum = '6884,87598293597'
+	Maximum = '9437,17835255888'
+	Minimum = '7751,82164744112'
 	MovementSize.Long = '1'
 	MovementSize.Metric = 'False'
 	MovementSize.Price = '5'
@@ -4347,18 +4430,18 @@
 	Group = '0'
 
 [Wsp\Window_0\ChartManager\OptimizeManager\OptimizeManager\WFOptimizer\WFO]
-	IS_size = '21456'
-	IntervalType = '0'
+	IS_size = '30'
+	IntervalType = '1'
 	IsAnchored = '0'
 	IsDefaultInitNeeded = '0'
-	OOS_size = '2145'
+	OOS_size = '30'
 
 [Wsp\Window_0\ChartManager\PriceScale]
 	Left Characters = '7'
 	Left Manual = '0'
 	Left Scale = '0'
 	Precise Marker = '1'
-	Right Characters = '7'
+	Right Characters = '9'
 	Right Manual = '0'
 	Right Scale = '1'
 	Time To Close = '1'
@@ -4510,7 +4593,7 @@
 	isStatusWindowShow = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0]
-	IdName = 'sb_MEPStrategy_Level7_EP4b2e5_protection_2b2e12_HHI_pivotShift_v2'
+	IdName = 'sb_MEPStrategy_Level6_4_EP4b2e5_protection_2b2e20_EPFlip_fixRecovery'
 	Status = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper]
@@ -4543,6 +4626,30 @@
 	Step2 = '1'
 	Stop2 = '6'
 	Value = '6'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_EPFlip_LevelRatio]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
+	Step2 = '1'
+	Stop2 = '1'
+	Value = '1'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_EPFlip_LevelRisk]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '0'
+	Start2 = '0'
+	Step2 = '1'
+	Stop2 = '0'
+	Value = '0'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_EPFlip_previousDayNum]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '4'
+	Start2 = '4'
+	Step2 = '1'
+	Stop2 = '4'
+	Value = '4'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_Min8BB_Short_marketclose]
 	IsInputOptimizable = '1'
@@ -4863,157 +4970,21 @@
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_dayBarOpen]
 	Value = 'open data3'
 
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_down1]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_down2]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_down3]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_down4]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_down5]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_down6]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_down7]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_up1]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_up2]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_up3]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_up4]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_up5]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_up6]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_inc_up7]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_stochLen1_fast]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '0'
-	Start2 = '0'
-	Step2 = '1'
-	Stop2 = '0'
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_stochLen2_fast]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '0'
-	Start2 = '0'
-	Step2 = '1'
-	Stop2 = '0'
-	Value = '0'
-
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_disturbedEP_stochLength_fast]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
-	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
-
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_downTrailPercentHighLevel]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1,4'
-	Start2 = '1,4'
+	LocalCurrentValue2 = '1,3'
+	Start2 = '1,3'
 	Step2 = '1'
-	Stop2 = '1,4'
-	Value = '1.4'
+	Stop2 = '1,3'
+	Value = '1.3'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_downTrailThreshHighLevel]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '16000'
-	Start2 = '16000'
+	LocalCurrentValue2 = '20000'
+	Start2 = '20000'
 	Step2 = '1'
-	Stop2 = '16000'
-	Value = '16000'
+	Stop2 = '20000'
+	Value = '20000'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_expiryDayLevelRisk]
 	IsInputOptimizable = '1'
@@ -5073,19 +5044,19 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_firstTradingDayOfMonth_levelRatio]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '2'
-	Start2 = '2'
+	LocalCurrentValue2 = '2,2'
+	Start2 = '2,2'
 	Step2 = '1'
-	Stop2 = '2'
-	Value = '2'
+	Stop2 = '2,2'
+	Value = '2.2'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_fixcost]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '40000'
-	Start2 = '40000'
+	LocalCurrentValue2 = '58000'
+	Start2 = '58000'
 	Step2 = '1'
-	Stop2 = '40000'
-	Value = '40000'
+	Stop2 = '58000'
+	Value = '58000'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_gapRatio]
 	IsInputOptimizable = '1'
@@ -5312,11 +5283,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_levelRiskConfig]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '3'
-	Start2 = '3'
+	LocalCurrentValue2 = '2'
+	Start2 = '2'
 	Step2 = '1'
-	Stop2 = '3'
-	Value = '3'
+	Stop2 = '2'
+	Value = '2'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_levelRisk_dailyExtremeDay]
 	IsInputOptimizable = '1'
@@ -5361,6 +5332,14 @@
 	Stop2 = '3'
 	Value = '3'
 
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_maxPosition]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '10'
+	Start2 = '10'
+	Step2 = '1'
+	Stop2 = '10'
+	Value = '10'
+
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_minBarClose]
 	Value = 'close data1'
 
@@ -5376,6 +5355,22 @@
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_open8MinBar]
 	Value = 'open data4'
 
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_openClose2Std_levelRatio]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1,6'
+	Start2 = '1,6'
+	Step2 = '1'
+	Stop2 = '1,6'
+	Value = '1.6'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_openClose2std_region]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '50'
+	Start2 = '50'
+	Step2 = '1'
+	Stop2 = '50'
+	Value = '50'
+
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_outSD]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '3'
@@ -5383,6 +5378,86 @@
 	Step2 = '1'
 	Stop2 = '3'
 	Value = '3'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_portfolio_levelNum1_end]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '6'
+	Start2 = '6'
+	Step2 = '1'
+	Stop2 = '6'
+	Value = '6'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_portfolio_levelNum1_start]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
+	Step2 = '1'
+	Stop2 = '1'
+	Value = '1'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_portfolio_levelNum2_end]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '4'
+	Start2 = '4'
+	Step2 = '1'
+	Stop2 = '4'
+	Value = '4'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_portfolio_levelNum2_start]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
+	Step2 = '1'
+	Stop2 = '1'
+	Value = '1'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_portfolio_maxLevel]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '7'
+	Start2 = '7'
+	Step2 = '1'
+	Stop2 = '7'
+	Value = '7'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_reboundFromBB_maxLevelRisk]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '3'
+	Start2 = '3'
+	Step2 = '1'
+	Stop2 = '3'
+	Value = '3'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_reboundFromBB_pivot_lookbackWindow]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '30'
+	Start2 = '30'
+	Step2 = '1'
+	Stop2 = '30'
+	Value = '30'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_reboundFromBB_pivot_windowSize]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '5'
+	Start2 = '5'
+	Step2 = '1'
+	Stop2 = '5'
+	Value = '5'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_reboundFromBB_range]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '30'
+	Start2 = '30'
+	Step2 = '1'
+	Stop2 = '30'
+	Value = '30'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_reboundFromBB_shiftLevelNum]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
+	Step2 = '1'
+	Stop2 = '1'
+	Value = '1'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_shiftEP_WindowSize]
 	IsInputOptimizable = '1'
@@ -5456,20 +5531,28 @@
 	Stop2 = '1'
 	Value = '1'
 
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_showDate]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '0'
+	Start2 = '0'
+	Step2 = '1'
+	Stop2 = '0'
+	Value = '0'
+
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_showLog]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '1'
-	Start2 = '1'
+	LocalCurrentValue2 = '0'
+	Start2 = '0'
 	Step2 = '1'
-	Stop2 = '1'
-	Value = '1'
+	Stop2 = '0'
+	Value = '0'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_smoothLen1]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '7'
-	Start2 = '7'
+	Start2 = '2'
 	Step2 = '1'
-	Stop2 = '7'
+	Stop2 = '12'
 	Value = '7'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_smoothLen2]
@@ -5491,9 +5574,9 @@
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_stochLength]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '6'
-	Start2 = '6'
+	Start2 = '2'
 	Step2 = '1'
-	Stop2 = '6'
+	Stop2 = '12'
 	Value = '6'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_stoplossPercent]
@@ -5503,6 +5586,46 @@
 	Step2 = '1'
 	Stop2 = '0,03'
 	Value = '0.03'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_timeSkewIn_Increase]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '2'
+	Start2 = '2'
+	Step2 = '1'
+	Stop2 = '2'
+	Value = '2'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_timeSkewIn_endTime]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1000'
+	Start2 = '1000'
+	Step2 = '1'
+	Stop2 = '1000'
+	Value = '1000'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_timeSkewIn_initPos]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '2'
+	Start2 = '2'
+	Step2 = '1'
+	Stop2 = '2'
+	Value = '2'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_timeSkewIn_period]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '3'
+	Start2 = '3'
+	Step2 = '1'
+	Stop2 = '3'
+	Value = '3'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_timeSkewIn_startTime]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '916'
+	Start2 = '916'
+	Step2 = '1'
+	Stop2 = '916'
+	Value = '916'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_timeSkewOut_corssEP_starttime]
 	IsInputOptimizable = '1'
@@ -5594,11 +5717,11 @@
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_upTrailThreshHighLevel]
 	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '12000'
-	Start2 = '12000'
+	LocalCurrentValue2 = '18000'
+	Start2 = '18000'
 	Step2 = '1'
-	Stop2 = '12000'
-	Value = '12000'
+	Stop2 = '18000'
+	Value = '18000'
 
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use8MinBB]
 	IsInputOptimizable = '1'
@@ -5678,6 +5801,22 @@
 	Stop2 = '1'
 	Value = '1'
 
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_EPFlip]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
+	Step2 = '1'
+	Stop2 = '1'
+	Value = '1'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_EP_openClose2StdDaily]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
+	Step2 = '1'
+	Stop2 = '1'
+	Value = '1'
+
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_ExpiryDays]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
@@ -5710,14 +5849,6 @@
 	Stop2 = '1'
 	Value = '1'
 
-[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_disturbedEP]
-	IsInputOptimizable = '1'
-	LocalCurrentValue2 = '0'
-	Start2 = '0'
-	Step2 = '1'
-	Stop2 = '0'
-	Value = '0'
-
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_firstTradingDayOfMonth]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
@@ -5726,7 +5857,31 @@
 	Stop2 = '1'
 	Value = '1'
 
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_portfolio_setting]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '1'
+	Start2 = '1'
+	Step2 = '1'
+	Stop2 = '1'
+	Value = '1'
+
 [Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_shiftEP]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '0'
+	Start2 = '0'
+	Step2 = '1'
+	Stop2 = '0'
+	Value = '0'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_shiftEP_reboundFromBB]
+	IsInputOptimizable = '1'
+	LocalCurrentValue2 = '0'
+	Start2 = '0'
+	Step2 = '1'
+	Stop2 = '0'
+	Value = '0'
+
+[Wsp\Window_0\ChartManager\Strategy\SignalObject_0\SignalHelper\InputHelper\Input_use_timeSkewIn]
 	IsInputOptimizable = '1'
 	LocalCurrentValue2 = '1'
 	Start2 = '1'
@@ -6094,7 +6249,7 @@
 	Confirm = 'False'
 	NeedActivateAT = 'False'
 	Profile = 'Interactive Brokers'
-	StrategyName = 'MEPStrategy_Level7_EP4.5_protection_2.12_HHI_pivotShift_v2; !optimize by Sharpe ratio!'
+	StrategyName = 'MEPStrategy_Level6_4_EP4.5_protection_2.20_EPFlip_fixRecovery; !optimize by Sharpe ratio!'
 	SymbolName = 'HHIA - 1 Minute - Interactive Brokers'
 
 [Wsp\Window_0\ChartManager\Strategy\StrategyHelper\OptimizerProperties\Algorithm_0]
@@ -6165,10 +6320,10 @@ The reserved words supported in Portfolio optimization:
 * CustomFitnessValue
 
 */'
-	CriteriaDirection = '1'
+	CriteriaDirection = '0'
 	CriteriaIndex = '18'
 	CriteriaType = '0'
-	Limits = '100000'
+	Limits = '1000000'
 	UseLimits = '-1'
 
 [Wsp\Window_0\ChartManager\Strategy\StrategyHelper\OptimizerProperties\Algorithm_1]
