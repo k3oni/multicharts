@@ -9,7 +9,6 @@ import os, inspect, datetime, re
 from functools import partial
 
 def log(level, calllevel, msg, color=None):
-     fmt = '{0:{1}}'
      filename = os.path.basename(inspect.stack()[calllevel][1])
      filename = re.sub('\.py$', '', filename)
  

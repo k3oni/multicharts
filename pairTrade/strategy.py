@@ -8,6 +8,8 @@ import math
 import datetime
 from logger import infor
 from datasrc import datasrc
+from EVATools import tools
+from PnLSystem import SpreadInfor
 
 class strategy:
     def __init__(self, strategyName, instruments, oms = None, tradeManager = None):
@@ -27,6 +29,25 @@ class strategy:
 
     def getTradeManager(self):
         return self.tm
+        
+    def setSession(self, tsSet):
+        self.dailyFirstTimestamp = datasrc.getDailyFirstTimestamp(tsSet)
+        self.dailyLastTimestamp = datasrc.getDailyLastTimestamp(tsSet)
+    
+    def getSession(self):
+        return self.dailyFirstTimestamp, self.dailyLastTimestamp
+        
+    def isMarketOpen(self, ts):
+        return ts in self.dailyFirstTimestamp
+        
+    def onMarketOpen(self, date):
+        self.tm.createTradeSheet(date)
+        
+    def isMarketClose(self, ts):
+        return ts in self.dailyLastTimestamp
+        
+    def onMarketClose(self, date):
+        pass
 
     def training(self, instruments, data):
         pass
@@ -42,6 +63,21 @@ class strategy:
         
     def getNetPosition(self, instrument, date):
         return self.tm.getNetPosition(instrument, date)
+        
+    def computePnL(self, dailyClose):
+        self.tm.computePnL(dailyClose)
+        
+    def getTotalPnL(self):
+        return self.tm.getTotalPnL()
+    
+    def showTotalPnL(self):
+        return self.tm.showTotalPnL()
+    
+    def showPnL(self):
+        self.tm.showPnL()
+        
+    def showAllTrades(self):
+        return self.tm.showAllTrades()
 
        
         
@@ -52,18 +88,24 @@ class pairTradingStrategy(strategy):
         
     def computeSpread(self, instruments, data):
         pass
+    
+    def computeSpreadTradeFromTradeRecord(self):
+        pass
 
     def getSpreadHistory(self):
         return self.spreadHistory
         
     def getSpreadTrades(self):
         return self.tm.spreadTrades
-    
-    def marketBuyPair(self, ts, spread, spreadSz):
-        return self.oms.marketBuyPair(ts, self.instruments, spread, spreadSz)
         
-    def marketSellPair(self, ts, spread, spreadSz):
-        return self.oms.marketSellPair(ts, self.instruments, spread, spreadSz)
+    def getSpreadTradeStack(self):
+        return self.tm.spreadTradeStack
+    
+    def marketBuyPair(self, ts, spread, spreadSz, spreadInfor):
+        return self.oms.marketBuyPair(ts, self.instruments, spread, spreadSz, spreadInfor)
+        
+    def marketSellPair(self, ts, spread, spreadSz, spreadInfor):
+        return self.oms.marketSellPair(ts, self.instruments, spread, spreadSz, spreadInfor)
 
 
 class GoldArb(pairTradingStrategy):
@@ -80,14 +122,21 @@ class GoldArb(pairTradingStrategy):
         for ins, c in zip(instruments, contractSz):
             self.contractSz[ins] = c
         
-    def getNetPosition(self):
-        return self.tm.getNetPosition()
+    def getNetPosition(self, date):
+        return self.tm.getNetPosition(date)
+            
+    def onMarketOpen(self, date):
+        pairTradingStrategy.onMarketOpen(self, date)
+        self.tm.updateNetPosition(date)
+        infor("Market open on {date} : Carry position {pos}".format(
+                  pos = self.tm.getNetPosition(date), date = date))
 
 ###############################################################################
-    @staticmethod
+    @staticmethod    
     def computeSpread(gc, aua, usdcny):
-        troyoz = 31.1034768        
-        return aua * troyoz / usdcny - gc
+        troyoz = 31.1034768
+        spreadInfor = SpreadInfor(troyoz /usdcny, aua, -1, gc)     
+        return aua * troyoz / usdcny - gc, spreadInfor
         
     def getMeanWeight(self, length):
         self.weight = float(2 / (float(length) + 1))
@@ -100,32 +149,31 @@ class GoldArb(pairTradingStrategy):
         return preMean * (1-weight) + spread * weight
 
     
-    def genSignal(self, ts, price, mean, leveldiff):       
-        curPos = self.getNetPosition()
+    def genSignal(self, ts, spread, spreadInfor, mean, leveldiff):       
+        today = tools.getDateFromDatetime(ts)        
+        curPos = self.getNetPosition(today)
         
-        curLevel = float(price-mean)/leveldiff
+        curLevel = float(spread-mean)/leveldiff
         curLevelUp = -math.ceil(curLevel)
         curLevelDown = -math.floor(curLevel)
 
-        if ts == datetime.datetime(2016, 10, 21, 9, 53, 00):
-            infor("%s curPos %s curLevelDown %s" % (ts, curPos, curLevelDown))
-
         if curPos < curLevelUp:
-            self.marketBuyPair(ts, price, curLevelUp-curPos)
+            self.marketBuyPair(ts, spread, curLevelUp-curPos, spreadInfor)
+            '''            
             infor("{ts} {spread} buy {sz} {curLevel} {curPos}".format(\
                     ts=ts, spread=price, sz=curLevelUp-curPos,
                     curLevel=curLevelUp, curPos=curPos))
+            '''
         if curPos > curLevelDown:
+            self.marketSellPair(ts, spread, curPos-curLevelDown, spreadInfor)
+            '''
             infor("{ts} {spread} sell {sz} {curLevel} {curPos}".format(\
                     ts=ts, spread=price, sz=curLevelDown-curPos,
-                    curLevel=curLevelDown, curPos=curPos))
-            self.marketSellPair(ts, price, curPos-curLevelDown)
-        
-        
+                    curLevel=curLevelDown, curPos=curPos))        
+            '''
     
     def training(self, instruments, data):
         pairTradingStrategy.training(self, instruments, data)        
-
         
         gcDict = datasrc.getDataForSymbol(data, instruments, "GC", "close")
         AUADict = datasrc.getDataForSymbol(data, instruments, "AUAA", "close")
@@ -133,14 +181,20 @@ class GoldArb(pairTradingStrategy):
                     
         ts = sorted(gcDict.keys())
         
-        self.length = 400
+        self.length = 800
         self.warmupPeriod = self.length
         self.leveldiff = 1        
         self.weight = self.getMeanWeight(self.length)
         pid = 0
         
         for t in ts:
-            spread = self.computeSpread(gcDict[t], AUADict[t], USDCNYDict[t])
+            if self.isMarketOpen(t):
+                self.onMarketOpen(tools.getDateFromDatetime(t))
+            
+            if self.isMarketClose(t):
+                self.onMarketClose(tools.getDateFromDatetime(t))
+            
+            spread, spreadInfor = self.computeSpread(gcDict[t], AUADict[t], USDCNYDict[t])
             self.spreadHistory[t] = spread
             self.oms.updateCurrentPrice("GC", gcDict[t])
             self.oms.updateCurrentPrice("AUAA", AUADict[t])
@@ -152,7 +206,7 @@ class GoldArb(pairTradingStrategy):
             self.meanHistory[t] = self.mean            
 
             if pid > self.warmupPeriod:
-                self.genSignal(t, spread, self.mean, self.leveldiff)
+                self.genSignal(t, spread, spreadInfor, self.mean, self.leveldiff)
             pid += 1
             
     def onlineValidate(self, ts, instruments, data):
@@ -167,7 +221,7 @@ class GoldArb(pairTradingStrategy):
         self.mean = self.computeEP(self.mean, spread, self.weight)
         self.genSignal(ts, spread, self.mean, self.leveldiff)
     
-    def showTrades(self, tsRange):
+    def plotTrades(self, tsRange):
         from view import View as vi
         from event import Event, EventType
         

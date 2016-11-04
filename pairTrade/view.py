@@ -7,7 +7,7 @@ Created on Thu Oct 27 14:10:08 2016
 
 from matplotlib import pyplot as plt
 from event import EventType
-from PnLSystem import SpreadTrade
+from PnLSystem import SpreadTrade, TradeAction, pairTradeManager
 from logger import infor
 
 class View:
@@ -30,7 +30,7 @@ class View:
             
         ts = sorted(dataSeries.keys())
         
-        if tsRange <> None:
+        if tsRange != None:
             tsStart = tsRange[0]
             tsEnd = tsRange[1]
         else:
@@ -65,9 +65,12 @@ class View:
         AUAIndex = symList.index("AUAA")
         USDCNYIndex = symList.index("USDCNY")
         
-        closeList1 = {entryList[GCIndex].ts : entryList[GCIndex].close for entryList in alignedData.values()}
-        closeList2 = {entryList[AUAIndex].ts : entryList[AUAIndex].close for entryList in alignedData.values()}
-        fx = {entryList[USDCNYIndex].ts : entryList[USDCNYIndex].close for entryList in alignedData.values()}       
+        closeList1 = {entryList[GCIndex].ts : entryList[GCIndex].close 
+                          for entryList in alignedData.values()}
+        closeList2 = {entryList[AUAIndex].ts : entryList[AUAIndex].close 
+                          for entryList in alignedData.values()}
+        fx = {entryList[USDCNYIndex].ts : entryList[USDCNYIndex].close 
+                          for entryList in alignedData.values()}       
     
         View.plotSeries(closeList1, symList[GCIndex], xtick_interval = xtick_interval)
         View.plotSeries(closeList2, symList[AUAIndex], xtick_interval = xtick_interval)
@@ -82,16 +85,40 @@ class View:
     def handleEvent(plt, ts, event):
         if EventType.SpreadTrade == event.type:
             spreadTrades = event.content
-            for st in spreadTrades.keys():
+            stack = []
+            
+            for st in sorted(spreadTrades.keys()):
                 try:
                     entry = spreadTrades[st]
                     x = ts.index(entry.ts)
                     y = entry.spread
-                    content = "{ts} {action} {spread} {raw}".format(\
-                        ts = entry.ts, action = entry.action, spread =entry.spread,\
-                        raw = entry.rawPrice)
+                    content = "{ts} {action} {spread}".format(\
+                        ts = entry.ts, action = entry.action, spread =entry.spread)
                     plt.plot(x, y, 'ro-')
                     plt.annotate(xy =(x, y), s=content)
+                    
+                    if len(stack) == 0:
+                        stack.append(entry)
+                    else:
+                        if (stack[-1].action == TradeAction.Long\
+                            and entry.action == TradeAction.Short)\
+                            or\
+                            (stack[-1].action == TradeAction.Short\
+                             and entry.action == TradeAction.Long):
+                            matchEntry = stack.pop()
+                            x1 = ts.index(matchEntry.ts)
+                            y1 = matchEntry.spread
+                            x2 = ts.index(entry.ts)
+                            y2 = entry.spread
+
+                            pnl = pairTradeManager.getSpreadTradePnL([matchEntry, entry])
+                            if pnl > 0:
+                                color = 'g'
+                            else:
+                                color = 'r'
+                            plt.plot([x1, x2], [y1, y2], color=color)
+                        else:
+                            stack.append(entry)      
                 except (ValueError, KeyError) as e:
                     infor(e)
-                    pass
+            

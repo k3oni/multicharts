@@ -21,7 +21,7 @@ class OMS:
     def updateCurrentPrice(self, instrument, price):
         self.currentPrice[instrument] = price
     
-    def marketBuyPair(self, ts, instrument, spread, spreadSize):
+    def marketBuyPair(self, ts, instrument, spread, spreadSize, spreadInfor):
         p0 = self.currentPrice[instrument[0]]
         p1 = self.currentPrice[instrument[1]]
         
@@ -31,11 +31,11 @@ class OMS:
                                     spreadSize)
                                     
         if isinstance(self.tm, pairTradeManager):
-            self.tm.addSpreadTradeRecord(ts, TradeAction.Long, spread, spreadSize, [p0, p1])            
+            self.tm.addSpreadTradeRecord(ts, TradeAction.Long, spread, spreadSize, spreadInfor)            
             
         return p0, p1
     
-    def marketSellPair(self, ts, instrument, spread, spreadSize):
+    def marketSellPair(self, ts, instrument, spread, spreadSize, spreadInfor):
         p0 = self.currentPrice[instrument[0]]
         p1 = self.currentPrice[instrument[1]]
         self.tm.addPairTradeRecord( EVATools.tools.getDateFromDatetime(ts), 
@@ -43,7 +43,7 @@ class OMS:
                                     p0, p1,
                                     spreadSize)                                    
         if isinstance(self.tm, pairTradeManager):
-            self.tm.addSpreadTradeRecord(ts, TradeAction.Short, spread, spreadSize, [p0, p1])
+            self.tm.addSpreadTradeRecord(ts, TradeAction.Short, spread, spreadSize, spreadInfor)
                              
         return p0, p1
 
