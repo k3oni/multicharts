@@ -434,7 +434,7 @@ class pairTradeManager(TradeManager):
     def getPnL(self, date):
         pnl1 = TradeManager.getPnL(self, self.instruments[0].name, date)
         pnl2 = TradeManager.getPnL(self, self.instruments[1].name, date)
-        return (pnl1, pnl2)
+        return {self.instruments[0].name : pnl1, self.instruments[1].name : pnl2}
 
     def showPnL(self):
         sym = list(self.tradeBooks.keys())[0]
@@ -454,27 +454,31 @@ class pairTradeManager(TradeManager):
             infor(r)
         
     def getTotalPnL(self):
-        currency = []
+        totalPnL = dict()
+        currency = dict()
+  
         for sym in self.tradeBooks.keys():
-            currency.append(self.tradeBooks[sym].currency)
-        
-        sym = list(self.tradeBooks.keys())[0]
-        days = sorted(self.tradeBooks[sym].book.keys())
-        totalPnL = [0, 0]        
-        for d in days:
-            try:
-                p1, p2 = self.getPnL(d)
-                totalPnL[0] += p1
-                totalPnL[1] += p2
-            except KeyError as e:
-                infor(e)
-                
+            currency[sym] = self.tradeBooks[sym].currency
+            totalPnL[sym] = sum([self.getPnL(d)[sym] for d 
+                                    in sorted(self.tradeBooks[sym].book.keys())])
         return totalPnL, currency
         
     def showTotalPnL(self):
-        pnls, currencys = self.getTotalPnL()
-        for p, c in zip(pnls, currencys):
-            infor("{p:.2f} {c}".format(p = p, c = c))
+        pnl, currency = self.getTotalPnL()
+        for sym in pnl.keys():
+            infor("{p:.2f} {c}".format(p = pnl[sym], c = currency[sym]))
+        
+    def getEquityCurve(self):
+        from itertools import accumulate        
+        equityCurves = dict()
+        currency = dict()
+        for sym in self.tradeBooks.keys():
+            orderedDate = sorted(self.tradeBooks[sym].book.keys())
+            pnlList = accumulate([self.getPnL(d)[sym] for d in orderedDate])
+            equityCurves[sym] = {d : pnl for d, pnl in zip(orderedDate, pnlList)}
+            currency[sym] = [ins.currency for ins in self.instruments if ins.name == sym][0]
+
+        return equityCurves, currency
         
     @staticmethod     
     def getSpreadTradePnL(spreadTrades):

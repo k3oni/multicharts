@@ -23,7 +23,7 @@ if __name__ == "__main__":
     contractSize = [3, 1]
     
     # data
-    dataPath = r"C:\Users\delvin\Desktop\code\pairTrade\data"
+    dataPath = r"C:\Users\delvin\Desktop\code\pairTrade\testData"
     ds = datasrc()
     dataDict = ds.loadDataDir(dataPath)
     alignedData, dataSyms = ds.alignData(dataDict)
@@ -55,3 +55,4 @@ if __name__ == "__main__":
     strat.computePnL(dailyClosePrice)
     strat.showPnL()
     strat.showTotalPnL()
+    strat.showEquityCurve(allClosePrice['USDCNY'], 'GC', 'AUAA')

@@ -76,6 +76,9 @@ class strategy:
     def showPnL(self):
         self.tm.showPnL()
         
+    def getEquityCurve(self):
+        return self.tm.getEquityCurve()
+        
     def showAllTrades(self):
         return self.tm.showAllTrades()
 
@@ -89,7 +92,7 @@ class pairTradingStrategy(strategy):
     def computeSpread(self, instruments, data):
         pass
     
-    def computeSpreadTradeFromTradeRecord(self):
+    def computeSpreadTradeFromTradeRecocrd(self):
         pass
 
     def getSpreadHistory(self):
@@ -121,7 +124,13 @@ class GoldArb(pairTradingStrategy):
        
         for ins, c in zip(instruments, contractSz):
             self.contractSz[ins] = c
-        
+
+    def config(self):
+        self.length = 800
+        self.warmupPeriod = self.length
+        self.leveldiff = 1        
+        self.weight = self.getMeanWeight(self.length)
+    
     def getNetPosition(self, date):
         return self.tm.getNetPosition(date)
             
@@ -180,11 +189,7 @@ class GoldArb(pairTradingStrategy):
         USDCNYDict = datasrc.getDataForSymbol(data, instruments, "USDCNY", "close")
                     
         ts = sorted(gcDict.keys())
-        
-        self.length = 800
-        self.warmupPeriod = self.length
-        self.leveldiff = 1        
-        self.weight = self.getMeanWeight(self.length)
+        self.config()        
         pid = 0
         
         for t in ts:
@@ -236,11 +241,30 @@ class GoldArb(pairTradingStrategy):
                         event = tradeEvent, tsRange = tsRange)                     
         vi.plotSeries(meanHistory, "Mean", xtick_interval = xtickIntv, \
                         tsRange = tsRange, newFigure = False, color = 'r')
-        leveldiffDict = {ts : meanHistory[ts] + self.leveldiff for ts in meanHistory.keys()}
-        vi.plotSeries(leveldiffDict, "leveldiff", xtick_interval = xtickIntv, \
-                        tsRange = tsRange, newFigure = False, color = ':g')
+        
+        for levelNum in range(-3, 4):
+            leveldiffDict = {ts : meanHistory[ts] + levelNum * self.leveldiff for ts in meanHistory.keys()}
+            vi.plotSeries(leveldiffDict, "leveldiff", xtick_interval = xtickIntv, \
+                            tsRange = tsRange, newFigure = False, color = ':g')
+        
         leveldiffDict = {ts : meanHistory[ts] - self.leveldiff for ts in meanHistory.keys()}
         vi.plotSeries(leveldiffDict, "leveldiff", xtick_interval = xtickIntv, \
-                        tsRange = tsRange, newFigure = False, color = ':g')    
+                        tsRange = tsRange, newFigure = False, color = ':g', dpi = 900,
+                        saveFile = True)    
 
-    
+    def showEquityCurve(self, usdcny, usdInstru, cnyInstru):       
+        from view import View as vi
+        from pprint import pprint
+        ec, currency = self.getEquityCurve()
+        
+        for sym in ec.keys():
+            vi.plotSeries(ec[sym], sym + "_pnl",
+                          xtick_interval = 1, saveFile = True)
+
+
+        # code is adhoc since contract class is not ready
+        orderedDates = sorted(ec[usdInstru].keys())
+        combinePnL = {d : ec[usdInstru][d] + ec[cnyInstru][d]/usdcny[d] for d in orderedDates}
+        vi.plotSeries(combinePnL, "combined usd", xtick_interval=1, saveFile=True)
+        
+                

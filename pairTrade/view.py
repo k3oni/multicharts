@@ -23,6 +23,8 @@ class View:
                 xtick_interval = 1000,\
                 newFigure = True,\
                 color = 'b',\
+                dpi = None,\
+                saveFile = False,\
                 event = None):
 
         if newFigure:               
@@ -57,8 +59,12 @@ class View:
         if event != None:
             View.handleEvent(plt, tsInterval, event)
             
-        plt.savefig(imageDir + sym + '.png')
-    
+        if saveFile:
+            if dpi == None:    
+                plt.savefig(imageDir + sym + '.png')
+            else:
+                plt.savefig(imageDir + sym + ".png", dpi=dpi)
+                
     @staticmethod
     def plotData(alignedData, symList, xtick_interval = 1000):    
         GCIndex = symList.index("GC")
@@ -92,11 +98,18 @@ class View:
                     entry = spreadTrades[st]
                     x = ts.index(entry.ts)
                     y = entry.spread
-                    content = "{ts} {action} {spread}".format(\
-                        ts = entry.ts, action = entry.action, spread =entry.spread)
                     plt.plot(x, y, 'ro-')
-                    plt.annotate(xy =(x, y), s=content)
+                    '''
+                    if entry.action == TradeAction.Long:
+                        action = "Long"
+                    if entry.action == TradeAction.Short:
+                        action = "Short"
+                        
+                    content = "{ts} {action} {spread:.2f}".format(\
+                        ts = entry.ts, action = action, spread =entry.spread)              
                     
+                    plt.annotate(xy =(x, y), s=content)
+                    '''
                     if len(stack) == 0:
                         stack.append(entry)
                     else:
@@ -110,7 +123,6 @@ class View:
                             y1 = matchEntry.spread
                             x2 = ts.index(entry.ts)
                             y2 = entry.spread
-
                             pnl = pairTradeManager.getSpreadTradePnL([matchEntry, entry])
                             if pnl > 0:
                                 color = 'g'
