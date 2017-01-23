@@ -1,0 +1,114 @@
+{
+  "datasrc": [], 
+  "__type__": "jsonConfig", 
+  "system": {
+    "dbport": 409684, 
+    "dataServerIP": "192.168.0.47", 
+    "dataServerPub": "409617", 
+    "BBGPort": 9090, 
+    "dbpasswd": "delvin123", 
+    "EvaBarUrl": "192.168.0.45:20132", 
+    "EvaBarLen": {
+      "60": "1m", 
+      "3600": "1h"
+    }, 
+    "LogPath": "/home/delvin/code/python/eva/engine/log/", 
+    "dbip": "192.168.0.47", 
+    "dataServerUrl": "192.168.0.47:409616", 
+    "dbuser": "delvin", 
+    "timezone": "Asia/Hong_Kong", 
+    "BBGServer": "192.168.0.216", 
+    "EvaDataPath": "/home/share/h5", 
+    "dbname": "delvin", 
+    "EvaTickUrl": "192.168.0.45:20131", 
+    "OMSUrl": "192.168.0.110:5678"
+  }, 
+  "strats": {
+    "delvin_meanReversion_1": {
+      "end": "2015-11-16", 
+      "starttz": "Asia/Hong_Kong", 
+      "para": {
+        "f1": 0.8, 
+        "levelRatio": 1.8, 
+        "f6": 0, 
+        "Instrument": "HC1 Index", 
+        "outSD": 3, 
+        "levelDiffSeparator": [
+          1, 
+          1.25, 
+          1.5, 
+          1.75, 
+          2
+        ], 
+        "levelDiffPercent": 0.004, 
+        "filterSD": 3, 
+        "stochLength": 6, 
+        "levelScale": [
+          1, 
+          1, 
+          1, 
+          1, 
+          1, 
+          1.8
+        ], 
+        "eptime": "09:15:00", 
+        "EMALength": 6, 
+        "positionPerNegativeLevel": [
+          1, 
+          1, 
+          1, 
+          1, 
+          1, 
+          1, 
+          1
+        ], 
+        "EPBroadcast": "192.168.0.47:33170", 
+        "levelNum": 7, 
+        "inSD": 2, 
+        "constDay": 1, 
+        "positionPerPositiveLevel": [
+          1, 
+          1, 
+          1, 
+          1, 
+          1, 
+          1, 
+          1
+        ], 
+        "SMALength": 14, 
+        "tradSession": [
+          "09:15:00-12:00:00", 
+          "13:00:00-23:10:00"
+        ], 
+        "stratDataMQUrl": "192.168.0.47:33620", 
+        "smoothLen2": 3, 
+        "smoothLen1": 7, 
+        "tradSessionTimeZone": "Asia/Hong_Kong", 
+        "levelRisk": 3, 
+        "BBLength": 20, 
+        "preDayNum": 50, 
+        "constHr": 2, 
+        "SDLength": 20, 
+        "gapRatio": 0.015
+      }, 
+      "data": [
+        {
+          "datatype": 4, 
+          "instrument": "HC1 Index", 
+          "barlen": "m1", 
+          "startdate": "2015-11-12", 
+          "tilldate": "2015-11-16"
+        }
+      ], 
+      "stratId": 1, 
+      "tradInstruments": [
+        "HC1 Index"
+      ], 
+      "start": "2015-11-12", 
+      "accoutname": "delvin", 
+      "mode": "backtest", 
+      "endtz": "Asia/Hong_Kong", 
+      "strategyname": "meanReversion"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+[Infor 2015-11-17 09:23:16 eva    79 ] Hello, I am EVA Version 1.0.
+[Infor 2015-11-17 09:23:16 eva    80 ] Today is 20151117.
+[Infor 2015-11-17 09:23:16 strate 73 ] Run paper trading for strategy EP
+[Infor 2015-11-17 09:23:16 urlfee 27 ] URL feed ready
+[Infor 2015-11-17 09:23:16 barcon 68 ] Live data ready.
+[Infor 2015-11-17 09:23:21 ep     67 ] Session 2015-11-17 09:15:00-2015-11-17 12:00:00 Initionalized.
+[Infor 2015-11-17 09:23:21 ep     155]  
+[Infor 2015-11-17 09:23:21 ep     156] ********************************************************************************
+[Infor 2015-11-17 09:23:21 ep     157] Report
+[Infor 2015-11-17 09:23:21 ep     158] Trading status : Trade
+[Infor 2015-11-17 09:23:21 ep     159] Extreme Day : No
+[Infor 2015-11-17 09:23:21 ep     160] EP : 10044.996, LevelDiff : 40.668
+[Infor 2015-11-17 09:23:21 ep     161] Day Open 10167
+[Infor 2015-11-17 09:23:21 ep     162]  
+[Infor 2015-11-17 09:23:21 ep     163] Level Ratio 1
+[Infor 2015-11-17 09:23:21 ep     164] PreDayHigh 10090.0
+[Infor 2015-11-17 09:23:21 ep     165] PreDayLow 9966.0
+[Infor 2015-11-17 09:23:21 ep     166]  
+[Infor 2015-11-17 09:23:21 ep     168] SMA 10399.9285714
+[Infor 2015-11-17 09:23:21 ep     169] SMALength 14
+[Infor 2015-11-17 09:23:21 ep     170] EMA 10290.4931874
+[Infor 2015-11-17 09:23:21 ep     171] EMALength 6
+[Infor 2015-11-17 09:23:21 ep     172] Mean 10345.2108794
+[Infor 2015-11-17 09:23:21 ep     173] 
+[Infor 2015-11-17 09:23:21 ep     174] SDLength 20
+[Infor 2015-11-17 09:23:21 ep     175] StochLength 6
+[Infor 2015-11-17 09:23:21 ep     176] SmoothLen1 7
+[Infor 2015-11-17 09:23:21 ep     177] SmoothLen2 3
+[Infor 2015-11-17 09:23:21 ep     178] 
+[Infor 2015-11-17 09:23:21 ep     179] SDDay 174.635985696
+[Infor 2015-11-17 09:23:21 ep     180] constDay 1
+[Infor 2015-11-17 09:23:21 ep     181] FactorDay -0.8
+[Infor 2015-11-17 09:23:21 ep     183] SDHr 139.838433558
+[Infor 2015-11-17 09:23:21 ep     184] constHr 2
+[Infor 2015-11-17 09:23:21 ep     185] FactorHr -0.8
+[Infor 2015-11-17 09:23:21 ep     187] SlowKHr 24.9324324324
+[Infor 2015-11-17 09:23:21 ep     188] SlowDHr 26.0167361291
+[Infor 2015-11-17 09:23:21 ep     189] preSlowKHr 25.1642575558
+[Infor 2015-11-17 09:23:21 ep     190] preSlowDHr 26.6691636495
+[Infor 2015-11-17 09:23:21 ep     191] SlowKDay 28.0556988138
+[Infor 2015-11-17 09:23:21 ep     192] SlowDDay 37.4097283007
+[Infor 2015-11-17 09:23:21 ep     193] preSlowKDay 37.5068194217
+[Infor 2015-11-17 09:23:21 ep     194] preSlowDDay 42.5322525297
+[Infor 2015-11-17 09:23:21 ep     195] EP_prebound 9981.76059715
+[Infor 2015-11-17 09:23:21 ep     196] EP 10044.996
+[Infor 2015-11-17 09:23:21 ep     204] ********************************************************************************
+[Infor 2015-11-17 09:23:21 ep     205]  
+[Infor 2015-11-17 09:23:21 strate 98 ] Start trading between 2015-11-17 09:15:00 and 2015-11-17 12:00:00
+[Infor 2015-11-17 09:23:21 zmqtic 41 ] 2015-11-17 09:23:17.000000, HHI.201511F000000, LSTPX, 10172.0, HHI
+[Infor 2015-11-17 09:23:21 ep     91 ] Datetime to compute EP: 2015-11-17 09:23:17
+[Infor 2015-11-17 09:23:21 ep     155]  
+[Infor 2015-11-17 09:23:21 ep     156] ********************************************************************************
+[Infor 2015-11-17 09:23:21 ep     157] Report
+[Infor 2015-11-17 09:23:21 ep     158] Trading status : Trade
+[Infor 2015-11-17 09:23:21 ep     159] Extreme Day : No
+[Infor 2015-11-17 09:23:21 ep     160] EP : 10049.936, LevelDiff : 40.688
+[Infor 2015-11-17 09:23:21 ep     161] Day Open 10172.0
+[Infor 2015-11-17 09:23:21 ep     162]  
+[Infor 2015-11-17 09:23:21 ep     163] Level Ratio 1
+[Infor 2015-11-17 09:23:21 ep     164] PreDayHigh 10090.0
+[Infor 2015-11-17 09:23:21 ep     165] PreDayLow 9966.0
+[Infor 2015-11-17 09:23:21 ep     166]  
+[Infor 2015-11-17 09:23:21 ep     168] SMA 10400.2857143
+[Infor 2015-11-17 09:23:21 ep     169] SMALength 14
+[Infor 2015-11-17 09:23:21 ep     170] EMA 10291.9217588
+[Infor 2015-11-17 09:23:21 ep     171] EMALength 6
+[Infor 2015-11-17 09:23:21 ep     172] Mean 10346.1037365
+[Infor 2015-11-17 09:23:21 ep     173] 
+[Infor 2015-11-17 09:23:21 ep     174] SDLength 20
+[Infor 2015-11-17 09:23:21 ep     175] StochLength 6
+[Infor 2015-11-17 09:23:21 ep     176] SmoothLen1 7
+[Infor 2015-11-17 09:23:21 ep     177] SmoothLen2 3
+[Infor 2015-11-17 09:23:21 ep     178] 
+[Infor 2015-11-17 09:23:21 ep     179] SDDay 174.185217513
+[Infor 2015-11-17 09:23:21 ep     180] constDay 1
+[Infor 2015-11-17 09:23:21 ep     181] FactorDay -0.8
+[Infor 2015-11-17 09:23:21 ep     183] SDHr 139.800214592
+[Infor 2015-11-17 09:23:21 ep     184] constHr 2
+[Infor 2015-11-17 09:23:21 ep     185] FactorHr -0.8
+[Infor 2015-11-17 09:23:21 ep     187] SlowKHr 24.9324324324
+[Infor 2015-11-17 09:23:21 ep     188] SlowDHr 26.0167361291
+[Infor 2015-11-17 09:23:21 ep     189] preSlowKHr 25.1642575558
+[Infor 2015-11-17 09:23:21 ep     190] preSlowDHr 26.6691636495
+[Infor 2015-11-17 09:23:21 ep     191] SlowKDay 28.0556988138
+[Infor 2015-11-17 09:23:21 ep     192] SlowDDay 37.4097283007
+[Infor 2015-11-17 09:23:21 ep     193] preSlowKDay 37.5068194217
+[Infor 2015-11-17 09:23:21 ep     194] preSlowDDay 42.5322525297
+[Infor 2015-11-17 09:23:21 ep     195] EP_prebound 9983.07521918
+[Infor 2015-11-17 09:23:21 ep     196] EP 10049.936
+[Infor 2015-11-17 09:23:21 ep     204] ********************************************************************************
+[Infor 2015-11-17 09:23:21 ep     205]  
+[Infor 2015-11-17 09:23:21 zmqwra 22 ] Send to tcp://192.168.0.47:33168
+[Infor 2015-11-17 09:23:21 zmqwra 23 ] # EP file 
+
+# Update time: 
+#   Daily after market open + 1 min
+
+# General:
+#   VERSION=<Version name>
+#   LAST_UPDATE=<1yyMMdd.00, hmm.00>
+
+#Extrem Day Gap Open Format:
+#  DO_TRADE=<YES/NO>
+#  EP=<number>
+#  Interval=<number>
+#
+VERSION=2
+LAST_UPDATE=2015-11-17 09:23:17
+DO_TRADE=YES
+EP=10049
+Interval=40
+
+[Infor 2015-11-17 09:23:21 strate 107] Skip session 2015-11-17 09:15:00-2015-11-17 12:00:00
+[Infor 2015-11-17 09:23:21 strate 109] End trading between 2015-11-17 09:15:00 and 2015-11-17 12:00:00
+[Infor 2015-11-17 09:23:21 strate 98 ] Start trading between 2015-11-17 13:00:00 and 2015-11-17 23:10:00
+[Infor 2015-11-17 09:23:31 strate 101] sleeping ...
+[Infor 2015-11-17 09:23:37 eva    69 ] EVA received ctrl+C signal. Exit now.

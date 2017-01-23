@@ -1,0 +1,411 @@
+//syntax = "proto2";
+// version: 2015-11-18.2
+// TBI: stands for 'To be implemented'
+
+package OMS.API.Message.ProtoBuf;
+
+message Payload {
+
+    required int32          request_id  = 1;
+    required MessageType    type        = 2;
+    optional Request        request     = 3;
+    optional Acknowledge    acknowledge = 4;
+    optional Error          error       = 5;
+    optional Update         update      = 6;
+
+    enum MessageType {
+
+        REQ     = 1;
+        ACK     = 2;
+        ERROR   = 3;
+        UPDATE  = 4;
+
+    }
+
+    message Request {
+
+        required Command                        command             = 1;
+        // protobuf-net does not support 'oneof' as of 2015-11-17
+        optional LoadGateway.Request.Generic    load_gateway        = 2;
+        optional LoadGateway.Request.SP         load_gateway_SP     = 3;
+        optional LoadGateway.Request.SP_RAW     load_gateway_SP_raw = 4;
+        optional LoadGateway.Request.IB         load_gateway_IB     = 5;
+        optional LoadGateway.Request.IB_RAW     load_gateway_IB_raw = 6;
+        optional UnloadGateway.Request          unload_gateway      = 7;
+        optional AddOrder.Request               add_order           = 8;
+        optional DeleteOrder.Request            delete_order        = 9;
+        //optional ChangeOrder                  change_order        = 10;     //TBI
+
+        enum Command
+        {
+
+            LoadGateway         = 1;
+            LoadGatewaySP       = 2;
+            LoadGatewaySP_RAW   = 3;
+            LoadGatewayIB       = 4;
+            LoadGatewayIB_RAW   = 5;
+            UnloadGateway       = 6;
+            AddOrder            = 7;
+            DeleteOrder         = 8;
+            //ChangeOrder         = 9;      //TBI
+
+        }
+
+    }
+
+    message Acknowledge {
+
+        required Command                    command             = 1;
+        // protobuf-net does not support 'oneof' as of 2015-11-17
+        optional LoadGateway.Acknowledge    load_gateway        = 2;
+        optional UnloadGateway.Acknowledge  unload_gateway      = 3;
+        optional AddOrder.Acknowledge       add_order           = 4;
+        optional DeleteOrder.Acknowledge    delete_order        = 5;
+        //optional ChangeOrder.Acknowledge  change_order        = 6;     //TBI
+
+        enum Command
+        {
+
+            Load         = 1;
+            Unload       = 2;
+            AddOrder     = 3;
+            DeleteOrder  = 4;
+            //ChangeOrder  = 5;     //TBI
+
+        }
+
+    }
+
+    message Update {
+
+        required Command                command             = 1;
+        // protobuf-net does not support 'oneof' as of 2015-11-17
+        optional LoadGateway.Reply      load_gateway        = 2;
+        optional UnloadGateway.Reply    unload_gateway      = 3;
+        optional AddOrder.Reply         add_order           = 4;
+        optional DeleteOrder.Reply      delete_order        = 5;
+        //optional ChangeOrder.Reply      changeOrder         = 6;     //TBI
+
+        enum Command
+        {
+
+            Load         = 1;
+            Unload       = 2;
+            AddOrder     = 3;
+            DeleteOrder  = 4;
+            //ChangeOrder  = 5;     //TBI
+
+        }
+
+    }
+
+    message Error {
+
+        required Type                   type                = 1;
+        // protobuf-net does not support 'oneof' as of 2015-11-17
+        optional External.Error         external            = 2;
+        optional LoadGateway.Error      load_gateway        = 3;
+        optional UnloadGateway.Error    unload_gateway      = 4;
+        optional AddOrder.Error         add_order           = 5;
+        optional DeleteOrder.Error      delete_order        = 6;
+        //optional ChangeOrder.Error      change_order         = 7;     //TBI
+
+        enum Type
+        {
+
+            External        = 1;
+            LoadGateway     = 2;
+            UnloadGateway   = 3;
+            AddOrder        = 4;
+            DeleteOrder     = 5;
+            //ChangeOrder     = 6;      //TBI
+
+        }
+
+    }
+}
+
+enum ConnectStatus
+{
+
+    Initialized     = 1;
+    Disconnecting   = 2;
+    Disconnected    = 3;    // the resulting state after any connection error occured
+    Connecting      = 4;
+    Connected       = 5;    // the only state that client can perform order requests
+    ConnectError    = 6;
+    DisconnectError = 7;
+    ConnectionLost  = 8;
+
+}
+
+message LoadGateway {
+
+    message Request {
+
+        message Generic {
+
+            required int32 account_id = 1;
+
+        }
+
+        message SP
+        {
+
+            required int32  account_id  = 1;
+            required string server      = 2;
+            required int32  port        = 3;
+            required string login_id    = 4;
+            required string password    = 5;
+            required string license     = 6;
+            required string app_id      = 7;
+
+        }
+
+        message SP_RAW
+        {
+
+            required string server      = 2;
+            required int32  port        = 3;
+            required string login_id    = 4;
+            required string password    = 5;
+            required string license     = 6;
+            required string app_id      = 7;
+
+        }
+
+        message IB {
+
+            required int32  account_id      = 1;
+            required string server          = 2;
+            required int32  port            = 3;
+            required string trade_account   = 4;
+            required int32  client_id       = 5;
+
+        }
+
+        message IB_RAW {
+
+            required string server          = 2;
+            required int32  port            = 3;
+            required string trade_account   = 4;
+            required int32  client_id       = 5;
+
+        }
+
+    }
+
+    message Acknowledge
+    {
+
+        required int32  account_id  = 1;
+
+    }
+
+    message Reply
+    {
+
+        required int32          account_id  = 1;
+        required ConnectStatus  status      = 2;
+
+    }
+
+    message Error
+    {
+
+        required string error_message   = 1;
+        required int32  error_code      = 2;
+        required int32  account_id      = 3;
+
+    }
+
+}
+
+message UnloadGateway {
+
+    message Request {
+
+        required int32 account_id   = 1;
+
+    }
+
+    message Acknowledge {
+
+        required int32 account_id   = 1;
+
+    }
+
+    message Reply {
+
+        required int32          account_id  = 1;
+        required ConnectStatus  status      = 2;
+
+    }
+
+    message Error
+    {
+
+        required string error_message   = 1;
+        required int32  error_code      = 2;
+        required int32  account_id      = 3;
+
+    }
+
+}
+
+
+enum OrderStatus {
+
+    Undefined           = 1;
+    AddREQ              = 2;
+    Adding              = 3;
+    Working             = 4;
+    ChangeREQ           = 5;
+    Changing            = 6;
+    DeleteREQ           = 7;
+    Deleting            = 8;
+    Deleted             = 9;
+    PartlyTraded        = 10;
+    Traded              = 11;
+    InvalidExchange     = 12;
+    Inactive            = 13;
+
+}
+
+enum OrderType
+{
+    MarketOrder = 1;
+    LimitOrder  = 2;
+}
+
+enum SecurityType
+{
+    Future  = 1;
+}
+
+enum Action {
+
+    Buy     = 1;
+    Sell    = 2;
+}
+
+enum TimeInForce {
+
+    Day             = 1;
+    GoodTillCancel  = 2;    //GTC
+
+}
+
+message AddOrder {
+
+    message Request {
+
+        required int32          account_id      = 1;
+        required OrderType      order_type      = 2;
+        required Action         action          = 3;
+        required int32          quantity        = 4;
+        required string         exchange        = 5;
+        required string         product_code    = 6;
+        required SecurityType   security_type   = 7;
+        required double         price           = 8;
+        required TimeInForce    time_in_force   = 9;
+        required string         order_reference = 10;
+
+    }
+
+    message Acknowledge {
+
+        required int32  account_id      = 1;
+        required string order_reference = 2;
+
+    }
+
+    message Reply {
+
+        required int32          account_id  = 1;
+        required string         order_reference = 2;
+        required OrderStatus    status      = 3;
+        required int32          traded_qty  = 4;
+        required int64          broker_ref  = 5;
+        required int64          exchange_ref  = 6;
+
+    }
+
+    message Error
+    {
+
+        required string error_message   = 1;
+        required int32  error_code      = 2;
+        required int32  account_id      = 3;
+        required string order_reference = 4;
+
+    }
+
+}
+
+message DeleteOrder {
+
+    message Request {
+
+        required int32          account_id      = 1;
+        required OrderType      order_type      = 2;
+        required Action         action          = 3;
+        required int32          quantity        = 4;
+        required string         exchange        = 5;
+        required string         product_code    = 6;
+        required SecurityType   security_type   = 7;
+        required double         price           = 8;
+        required TimeInForce    time_in_force   = 9;
+        required string         order_reference = 10;
+        required string         broker_reference = 11;
+
+    }
+
+    message Acknowledge {
+
+        required int32  account_id          = 1;
+        required string order_reference     = 2;
+        required string broker_reference    = 3;
+
+    }
+
+    message Reply {
+
+        required int32          account_id      = 1;
+        required string         order_reference = 2;
+        required string         broker_reference = 3;
+        required OrderStatus    status          = 4;
+        //required int32          traded_qty  = 5;
+
+    }
+
+    message Error
+    {
+
+        required string error_message   = 1;
+        required int32  error_code      = 2;
+        required int32  account_id      = 3;
+        required string order_reference = 4;
+
+    }
+
+}
+
+message ChangeOrder {
+
+    required int32 account_id = 1;
+
+}
+
+message External {
+
+    message Error {
+
+        required string error_message   = 1;
+        required int32  error_code      = 2;
+        required int32  account_id      = 3;
+
+    }
+
+}
+

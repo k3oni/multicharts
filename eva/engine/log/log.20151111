@@ -1,0 +1,11 @@
+[Infor 2015-11-11 14:33:01 eva    69 ] Hello, I am EVA Version 1.0.
+[Infor 2015-11-11 14:33:01 eva    70 ] Today is 20151111.
+[Infor 2015-11-11 14:33:01 strate 66 ] Run paper trading
+[Infor 2015-11-11 14:33:01 urlfee 27 ] URL feed ready
+[Infor 2015-11-11 14:33:01 barcon 68 ] Live data ready.
+[Infor 2015-11-11 14:33:07 ep     61 ] Session 2015-11-11 09:15:00-2015-11-11 12:00:00 Initionalized.
+[Infor 2015-11-11 14:33:07 strate 90 ] Start trading between 2015-11-11 09:15:00 and 2015-11-11 12:00:00
+[Infor 2015-11-11 14:33:07 strate 104] End trading between 2015-11-11 09:15:00 and 2015-11-11 12:00:00
+[Infor 2015-11-11 14:33:07 strate 90 ] Start trading between 2015-11-11 13:00:00 and 2015-11-11 23:10:00
+[Infor 2015-11-11 14:33:12 strate 48 ] EP is alive.
+[Infor 2015-11-11 23:10:00 strate 104] End trading between 2015-11-11 13:00:00 and 2015-11-11 23:10:00

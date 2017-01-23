@@ -1,0 +1,46 @@
+// version 1.0
+// date 2015-11-20
+
+package EVA.DataServer.ProtoBuf;
+
+message MessageBase {
+
+    required MessageType type           = 1;
+    optional int32  requestId           = 2;
+    optional LiveDataRequest ldr        = 3; 
+    optional HistoricalDataRequest hdr  = 4;
+
+    enum MessageType {
+        UNKNOWN                 = 0;
+        requestLiveData         = 1;
+        requestHistoricalData   = 2;
+    }
+
+    message SessionType {
+        required string sessionBegin    = 1;
+        required string sessionEnd      = 2;
+    }
+
+    message LiveDataRequest {
+        optional string instrument      = 1;
+        optional int32  dataType        = 2;
+        optional string today           = 3;
+        optional SessionType session    = 4;    
+        optional string url             = 5;      
+        optional string barLength       = 6;
+        repeated SessionType sessions   = 7;
+    }
+
+    message HistoricalDataRequest {
+        optional string instrument      = 1;
+        optional string expireYear      = 2;
+        optional string expireMonth     = 3;
+        optional string typeCode        = 4;
+        optional int32  dataType        = 5;
+        optional string barLength       = 6;
+        optional string startDate       = 7;
+        optional string endDate         = 8;  
+        repeated SessionType sessions   = 9;
+    }
+
+}

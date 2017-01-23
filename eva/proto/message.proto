@@ -1,0 +1,83 @@
+//syntax = "proto2";
+
+message MessageBase {
+  enum MessageType {
+    UNKNOWN     = 0;
+    COMMAND     = 1;
+    ORDER       = 2;
+    EXECUTION   = 3;
+    RETURN_CODE = 4;
+    ORDERBOOK   = 5;     
+    BAR         = 6;
+    TICKMSG     = 7;
+  }
+  
+  enum PxType {  
+    UNKNOWN_PXTYPE            = 0;
+    TRADES                    = 1;
+    MIDPOINT                  = 2;
+    BID                       = 3;
+    ASK                       = 4;
+    BID_ASK                   = 5;
+    HISTORICAL_VOLATILITY     = 6;
+    OPTION_IMPLIED_VOLATILITY = 7;    
+  }
+  
+  enum TickType {
+    UNKNOWN_TICKTYPE          =  0;
+    BIDPX                     =  1;
+    ASKPX                     =  2;     
+    BIDSZ                     =  3;
+    ASKSZ                     =  4;
+    LSTPX                     =  5;
+    LSTSZ                     =  6;
+    LSTTS                     =  7;
+    VOLUME                    =  8;
+    OPEN                      =  9;
+    HIGH                      = 10;
+    LOW                       = 11;
+    CLOSE                     = 12;
+    RT_VOLUME                 = 13;    
+  }
+  
+  message TickMsg {
+    optional int32    seqnum           =  1;
+    optional TickType tickType         =  2;
+    optional int64    ts               =  3;
+    optional string   contractID       =  4;
+    optional string   msgStr           =  5;
+  }
+  
+  message Bar {
+    optional int32   seqnum            =  1;
+    optional PxType  pxType            =  2;
+    optional int64   ts                =  3;
+    optional string  contractID        =  4;
+    optional int32   nbDec             =  5;
+    optional int32   open              =  6;
+    optional int32   high              =  7;
+    optional int32   low               =  8;
+    optional int32   close             =  9;
+    optional int32   volume            = 10;
+    optional int32   barcnt            = 11;
+    optional int32   wap               = 12;    
+    optional int32   gap               = 13;
+  } 
+  
+  /*
+  message OrderBook {
+    optional int32  seqnum            = 1;
+    optional int64  ts                = 2;
+    optional string contractID        = 3;
+    optional int32  nbDec             = 4;
+    repeated int32  bidask            = 5;
+    repeated int32  bszasz            = 6;
+  }
+  optional OrderBook     orderBook   = 10; 
+  */  
+  required MessageType   type        =  1 [default = UNKNOWN];  
+  optional Bar           bar         = 11;
+  optional TickMsg       tickMsg     = 12;
+}
+
+

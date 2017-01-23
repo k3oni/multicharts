@@ -1,0 +1,71 @@
+{
+  "datasrc": [], 
+  "__type__": "jsonConfig", 
+  "system": {
+    "dbport": 409684, 
+    "dataServerIP": "192.168.0.47", 
+    "dataServerPub": "409617", 
+    "BBGPort": 9090, 
+    "dbpasswd": "delvin123", 
+    "EvaBarUrl": "192.168.0.45:20132", 
+    "EvaBarLen": {
+      "60": "1m", 
+      "3600": "1h"
+    }, 
+    "LogPath": "/home/delvin/code/python/eva/engine/log/", 
+    "dbip": "192.168.0.47", 
+    "dataServerUrl": "192.168.0.47:409616", 
+    "dbuser": "delvin", 
+    "timezone": "Asia/Hong_Kong", 
+    "BBGServer": "192.168.0.216", 
+    "EvaDataPath": "/home/share/h5", 
+    "dbname": "delvin", 
+    "EvaTickUrl": "192.168.0.45:20131", 
+    "OMSUrl": "192.168.0.110:5678"
+  }, 
+  "strats": {
+    "delvin_EP_2": {
+      "para": {
+        "f1": 0.8, 
+        "levelRatio": 1.8, 
+        "f6": 0, 
+        "outSD": 3, 
+        "levelDiffPercent": 0.004, 
+        "EPBroadcast": "192.168.0.47:33169", 
+        "stochLength": 6, 
+        "EMALength": 6, 
+        "filterSD": 3, 
+        "inSD": 2, 
+        "constDay": 1, 
+        "SMALength": 14, 
+        "tradSession": [
+          "09:15:00-12:00:00", 
+          "13:00:00-23:10:00"
+        ], 
+        "stratDataMQUrl": "192.168.0.47:33619", 
+        "smoothLen2": 3, 
+        "smoothLen1": 7, 
+        "tradSessionTimeZone": "Asia/Hong_Kong", 
+        "levelRisk": 3, 
+        "BBLength": 20, 
+        "constHr": 2, 
+        "SDLength": 20, 
+        "gapRatio": 0.015
+      }, 
+      "stratId": 2, 
+      "tradInstruments": [
+        "HC1 Index"
+      ], 
+      "accoutname": "delvin", 
+      "mode": "paperTrading", 
+      "data": [
+        {
+          "datatype": 2, 
+          "instrument": "HC1 Index", 
+          "barlen": "m1"
+        }
+      ], 
+      "strategyname": "EP"
+    }
+  }
+}
